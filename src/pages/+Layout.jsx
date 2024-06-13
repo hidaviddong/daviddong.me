@@ -1,7 +1,7 @@
 import "./index.css";
 export default function LayoutDefault({ children }) {
 	return (
-		<div className="w-full h-screen">
+		<div className="w-full h-screen selection:text-blue-500 selection:bg-blue-100">
 			<header className="w-full flex justify-center items-center">
 				<a href="/">About</a>
 				<a href="/blog">Blog</a>

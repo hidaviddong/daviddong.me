@@ -1,5 +1,18 @@
 export default function About() {
     return (
-        <div>About</div>
+        <main className="w-full flex justify-center">
+            <article class="prose prose-stone prose-p:text-neutral-500 p-12">
+                <h1>Hey, I'm Haoyu</h1>
+                <p>
+                    You can call me David. I'm a software engineer and previously worked at Tencent Music and Peking University Institute.
+                </p>
+                <p>
+                    My interests include music, movies, reading, and games.
+                </p>
+                <p>
+                    Currently, I've relocated to Hong Kong and seeking a software development position. Please feel free to contact me!
+                </p>
+            </article>
+        </main>
     )
 }

@@ -1,6 +1,6 @@
 import vikeReact from 'vike-react/config'
 
 export default {
-    ssr: false,
+    title: "daviddong.me",
     extends: [vikeReact]
 }

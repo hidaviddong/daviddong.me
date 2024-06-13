@@ -10,7 +10,7 @@ export default function About() {
                     My interests include music, movies, reading, and games.
                 </p>
                 <p>
-                    Currently, I've relocated to Hong Kong and seeking a software development position. Please feel free to contact me!
+                    Recently, I moved to Hong Kong and am seeking a software development position. Please feel free to contact me!
                 </p>
             </article>
         </main>

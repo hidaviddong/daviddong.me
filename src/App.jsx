@@ -5,7 +5,7 @@ import Blog from "./Blog";
 
 export default function App() {
     return (
-        <>
+        <div className="w-full h-screen">
             <div className="w-full justify-center flex items-center">
                 <Link className="rounded-md bg-slate-300 p-2 text-slate-700" href="/">About</Link>
                 <Link className="rounded-md bg-slate-300 p-2 text-slate-700" href="/project">Project</Link>
@@ -21,6 +21,6 @@ export default function App() {
                 </Route>
                 <Route>404: No such page!</Route>
             </Switch>
-        </>
+        </div>
     )
 }

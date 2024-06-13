@@ -1,6 +1,6 @@
 import { useState } from "react";
 import "./index.css";
-import { motion } from "framer-motion"
+import { motion } from "framer-motion";
 export default function LayoutDefault({ children }) {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
@@ -19,7 +19,7 @@ export default function LayoutDefault({ children }) {
 					onHoverStart={() => setIsOpen(true)}
 					onHoverEnd={() => setIsOpen(false)}
 				>
-					<motion.div layout className="text-white"  >
+					<motion.div layout className="text-white">
 						<a href="/blog">Blog</a>
 					</motion.div>
 				</motion.div>

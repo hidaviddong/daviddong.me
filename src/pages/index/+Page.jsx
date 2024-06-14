@@ -1,7 +1,7 @@
-export default function About() {
+export default function Page() {
 	return (
 		<main className="w-full flex justify-center">
-			<article class="prose prose-stone prose-p:text-neutral-500 p-12">
+			<article className="prose prose-stone prose-p:text-neutral-500 p-12">
 				<h1>Hey, I'm Haoyu</h1>
 				<p>
 					You can call me David. I'm a software engineer and previously worked at Tencent Music and

@@ -1,5 +1,5 @@
 import { useState } from "react";
-export default function Project() {
+export default function Page() {
 	const [counter, setCounter] = useState(0);
 	return (
 		<div>

@@ -7,7 +7,10 @@ export default function Page() {
 					You can call me David. I'm a software engineer and previously worked at Tencent Music and
 					Peking University Institute.
 				</p>
-				<p>My interests include music, movies, reading, and games.</p>
+				<p>
+					In my free time, I usually play guitar, play League of Legends, and watch movies. My
+					favorite director is Woody Allen.
+				</p>
 				<p>
 					Recently, I moved to Hong Kong and am seeking a software development position. Please feel
 					free to contact me!

@@ -1,11 +1,11 @@
 import { useState } from "react";
 import "./index.css";
+import { Button } from "@/components/ui/button";
 import { motion } from "framer-motion";
-import Link from "../components/Link";
 export default function LayoutDefault({ children }) {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
-		<div className="w-full h-screen selection:text-blue-500 selection:bg-blue-100 bg-gradient-to-b from-zinc-100 to-zinc-50 flex flex-col items-center">
+		<div className="w-full h-screen selection:text-blue-500 selection:bg-blue-100 bg-dot-black/[0.2] flex flex-col items-center">
 			<main className="h-full flex justify-center items-center flex-col">{children}</main>
 			<motion.div
 				layout
@@ -21,9 +21,15 @@ export default function LayoutDefault({ children }) {
 					layout
 					className="text-black font-sans font-medium m-1 w-full flex justify-center items-center gap-x-4"
 				>
-					<Link href="/">About</Link>
-					<Link href="/blog">Blog</Link>
-					<Link href="/project">Project</Link>
+					<Button variant="ghost" asChild>
+						<a href="/">About</a>
+					</Button>
+					<Button variant="ghost" asChild>
+						<a href="/blog">Blog</a>
+					</Button>
+					<Button variant="ghost" asChild>
+						<a href="/project">Project</a>
+					</Button>
 				</motion.div>
 			</motion.div>
 		</div>

@@ -25,8 +25,8 @@ export default function Page() {
 								play guitar
 							</Badge>
 						</TooltipTrigger>
-						<TooltipContent className="py-0">
-							<p>R&B, Neo Soul, Gospel</p>
+						<TooltipContent>
+							R&B, Neo Soul, Gospel
 						</TooltipContent>
 					</Tooltip>
 				</TooltipProvider>
@@ -38,8 +38,8 @@ export default function Page() {
 								watch movies
 							</Badge>
 						</TooltipTrigger>
-						<TooltipContent className="py-0">
-							<p>Thriller, Tragicomedy</p>
+						<TooltipContent>
+							Thriller, Tragicomedy
 						</TooltipContent>
 					</Tooltip>
 				</TooltipProvider>

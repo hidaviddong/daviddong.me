@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 export default function LayoutDefault({ children }) {
 	const [isOpen, setIsOpen] = useState(false);
 	return (
-		<div className="w-full h-screen selection:text-blue-500 selection:bg-blue-100 bg-gradient-to-b from-zinc-100 to-zinc-50 flex flex-col items-center">
+		<div className="w-full h-screen selection:text-blue-500 selection:bg-blue-100 bg-dot-black/[0.2] flex flex-col items-center">
 			<main className="h-full flex justify-center items-center flex-col">{children}</main>
 			<motion.div
 				layout

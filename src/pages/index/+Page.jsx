@@ -1,15 +1,15 @@
-import { Tag } from "@/components/ui/tag";
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
+import { Tag } from "@/components/ui/tag";
 const RecentWorks = [
 	{
 		name: "Large Language Model",
 		description: "Medical field chat application.",
-		href: "/project/llm"
+		href: "/project/llm",
 	},
 	{
 		name: "Data and 3D Visualization",
 		description: "Comprehensive 3D visualization project.",
-		href: "/project/data-visualization"
+		href: "/project/data-visualization",
 	},
 	{
 		name: "Hybrid Mobile App",
@@ -22,14 +22,14 @@ const OpenSourceProjects = [
 	{
 		name: "Comments",
 		description: "Add comments to your website.",
-		href: "/project/comments"
+		href: "/project/comments",
 	},
 	{
 		name: "daviddong.me",
 		description: "Personal website template.",
-		href: "/"
+		href: "/",
 	},
-]
+];
 
 export default function Page() {
 	return (
@@ -60,7 +60,6 @@ export default function Page() {
 					free to contact me!
 				</p>
 			</section>
-
 
 			{/* Recent Works */}
 			<section>

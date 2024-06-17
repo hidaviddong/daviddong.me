@@ -7,6 +7,7 @@ import {
 	WhatsAppIcon,
 } from "@/components/ui/icons";
 import { navigate } from "vike/client/router";
+
 export default function LayoutDefault({ children }) {
 	return (
 		<div className="w-full h-screen selection:text-blue-500 selection:bg-blue-100 bg-dot-black/[0.2] flex flex-col items-center">
@@ -26,6 +27,7 @@ export default function LayoutDefault({ children }) {
 				>
 					<LinkedInIcon className="h-6 w-6" />
 				</DockIcon>
+
 				<DockIcon
 					onClick={() => {
 						window.location.href = "mailto:hi@daviddong.me";
@@ -42,7 +44,7 @@ export default function LayoutDefault({ children }) {
 				</DockIcon>
 				<DockIcon
 					onClick={() => {
-						window.location.href = "https://typst.app/project/rIWFtNvpmsgHgh18iqpk2a";
+						navigate("/cv.pdf");
 					}}
 				>
 					<ResumeIcon className="h-6 w-6" />

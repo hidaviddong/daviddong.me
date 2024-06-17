@@ -1,6 +1,6 @@
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 import { Tag } from "@/components/ui/tag";
-const RecentWorks = [
+const Works = [
 	{
 		name: "Large Language Model",
 		description: "Medical field chat application.",
@@ -51,7 +51,7 @@ export default function Page() {
 				<div className="text-neutral-500">
 					In my free time, I usually
 					<Tag text="play guitar" tooltip="R&B, Neo Soul, Gospel" />
-					,and
+					and
 					<Tag text="watch movies" tooltip="Thriller, Tragicomedy" />. My favorite director is Woody
 					Allen.
 				</div>
@@ -61,11 +61,11 @@ export default function Page() {
 				</p>
 			</section>
 
-			{/* Recent Works */}
+			{/* Works */}
 			<section>
-				<h3>Recent Works</h3>
+				<h3>Works</h3>
 				<BentoGrid className="lg:grid-rows-3">
-					{RecentWorks.map((feature) => (
+					{Works.map((feature) => (
 						<BentoCard key={feature.name} {...feature} />
 					))}
 				</BentoGrid>

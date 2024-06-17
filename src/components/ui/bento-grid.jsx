@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { cn } from "@/lib/utils";
-import { ArrowRightIcon } from "@radix-ui/react-icons";
 import { navigate } from "vike/client/router";
+import { ArrowRightIcon } from "./icons";
 const BentoGrid = ({ children, className }) => {
 	return (
 		<div className={cn("grid w-full auto-rows-[22rem] grid-cols-2 gap-4", className)}>

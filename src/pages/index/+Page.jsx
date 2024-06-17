@@ -3,7 +3,7 @@ export default function Page() {
 	return (
 		<article className="prose prose-p:text-neutral-500 p-12">
 			<h1>Hey, I'm Haoyu</h1>
-			<div>
+			<div className="text-neutral-500">
 				You can call me David. I'm a software engineer and previously worked at
 				<Tag text="Tencent Music" tooltip="Intern Software Developer from May 2022 to Oct 2022" />
 				and
@@ -14,7 +14,7 @@ export default function Page() {
 				.
 			</div>
 			<br />
-			<div>
+			<div className="text-neutral-500">
 				In my free time, I usually
 				<Tag text="play guitar" tooltip="R&B, Neo Soul, Gospel" />
 				,and

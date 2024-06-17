@@ -13,6 +13,7 @@ export default function Page() {
 				/>
 				.
 			</div>
+			<br />
 			<div>
 				In my free time, I usually
 				<Tag text="play guitar" tooltip="R&B, Neo Soul, Gospel" />

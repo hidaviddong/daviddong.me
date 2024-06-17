@@ -1,13 +1,12 @@
-import { useState } from "react";
-import "./index.css";
-import { Button } from "@/components/ui/button";
-import { motion } from "framer-motion";
+// import { useState } from "react";
+// import { Button } from "@/components/ui/button";
+// import { motion } from "framer-motion";
 export default function LayoutDefault({ children }) {
-	const [isOpen, setIsOpen] = useState(false);
+	// const [isOpen, setIsOpen] = useState(false);
 	return (
 		<div className="w-full h-screen selection:text-blue-500 selection:bg-blue-100 bg-dot-black/[0.2] flex flex-col items-center">
-			<main className="h-full flex justify-center items-center flex-col">{children}</main>
-			<motion.div
+			<main className="flex justify-center items-center flex-col">{children}</main>
+			{/* <motion.div
 				layout
 				data-isopen={isOpen}
 				initial={{ borderRadius: 50 }}
@@ -31,7 +30,7 @@ export default function LayoutDefault({ children }) {
 						<a href="/project">Project</a>
 					</Button>
 				</motion.div>
-			</motion.div>
+			</motion.div> */}
 		</div>
 	);
 }

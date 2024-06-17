@@ -8,7 +8,9 @@ function Tag({ text, tooltip }) {
 					{text}
 				</Badge>
 			</PopoverTrigger>
-			<PopoverContent side="top" className="text-sm w-full p-2">{tooltip}</PopoverContent>
+			<PopoverContent side="top" className="text-sm w-full p-2">
+				{tooltip}
+			</PopoverContent>
 		</Popover>
 	);
 }

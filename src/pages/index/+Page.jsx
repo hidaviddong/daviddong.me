@@ -5,8 +5,13 @@ const Works = [
 		name: "Large Language Model",
 		description: "Medical field chat application.",
 		href: "/project/llm",
-		background: <img src="/1.png" className="border rounded-md absolute md:-right-36 md:-top-20 md:transition-all md:duration-300 md:ease-out md:scale-[0.6] md:group-hover:scale-100" alt="Large Language Model" />
-
+		background: (
+			<img
+				src="/1.png"
+				className="border rounded-md absolute md:-right-36 md:-top-20 md:transition-all md:duration-300 md:ease-out md:scale-[0.6] md:group-hover:scale-100"
+				alt="Large Language Model"
+			/>
+		),
 	},
 	{
 		name: "Data and 3D Visualization",

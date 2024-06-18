@@ -13,9 +13,13 @@ jobs:
     - name: Checkout repository
       uses: actions/checkout@v2
 
-    - uses: denoland/setup-deno@v1
+    - name: Set up Deno
+      uses: denoland/setup-deno@v1
       with:
         deno-version: v1.x
+
+    - name: Install Puppeteer
+      run: PUPPETEER_PRODUCT=chrome deno run -A --unstable https://deno.land/x/puppeteer@16.2.0/install.ts
 
     - name: Remove old cv.pdf
       run: rm -f public/cv.pdf

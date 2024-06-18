@@ -14,14 +14,28 @@ const Works = [
 		),
 	},
 	{
-		name: "Data and 3D Visualization",
-		description: "Comprehensive 3D visualization project.",
+		name: "Data Visualization",
+		description: "Chart and 3D models.",
 		href: "/project/data-visualization",
+		background: (
+			<img
+				src="/1.png"
+				className="border rounded-md absolute md:-right-36 md:-top-20 md:transition-all md:duration-300 md:ease-out md:scale-[0.6] md:group-hover:scale-100"
+				alt="Large Language Model"
+			/>
+		),
 	},
 	{
 		name: "Hybrid Mobile App",
 		description: "QQ Music / We Sing Living Room.",
 		href: "/project/tme",
+		background: (
+			<img
+				src="/1.png"
+				className="border rounded-md absolute md:-right-36 md:-top-20 md:transition-all md:duration-300 md:ease-out md:scale-[0.6] md:group-hover:scale-100"
+				alt="Large Language Model"
+			/>
+		),
 	},
 ];
 
@@ -30,11 +44,25 @@ const OpenSourceProjects = [
 		name: "Comments",
 		description: "Add comments to your website.",
 		href: "/project/comments",
+		background: (
+			<img
+				src="/1.png"
+				className="border rounded-md absolute md:-right-36 md:-top-20 md:transition-all md:duration-300 md:ease-out md:scale-[0.6] md:group-hover:scale-100"
+				alt="Large Language Model"
+			/>
+		),
 	},
 	{
 		name: "daviddong.me",
 		description: "Personal website template.",
 		href: "/",
+		background: (
+			<img
+				src="/1.png"
+				className="border rounded-md absolute md:-right-36 md:-top-20 md:transition-all md:duration-300 md:ease-out md:scale-[0.6] md:group-hover:scale-100"
+				alt="Large Language Model"
+			/>
+		),
 	},
 ];
 
@@ -71,7 +99,7 @@ export default function Page() {
 			{/* Works */}
 			<section>
 				<h3>Works</h3>
-				<BentoGrid className="lg:grid-rows-3">
+				<BentoGrid className="md:grid-rows-3">
 					{Works.map((feature) => (
 						<BentoCard key={feature.name} {...feature} />
 					))}
@@ -80,7 +108,7 @@ export default function Page() {
 			{/* Open Source Project */}
 			<section>
 				<h3>Open Source Projects</h3>
-				<BentoGrid className="lg:grid-rows-3">
+				<BentoGrid className="md:grid-rows-3">
 					{OpenSourceProjects.map((feature) => (
 						<BentoCard key={feature.name} {...feature} />
 					))}

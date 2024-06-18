@@ -25,7 +25,11 @@ const BentoCard = ({ name, className, background, description, href }) => {
 				className,
 			)}
 		>
-			<div>{background}</div>
+			<img
+				src={background}
+				className="border rounded-md absolute md:-right-36 md:-top-20 md:transition-all md:duration-300 md:ease-out md:scale-[0.6] md:group-hover:scale-100"
+				alt={name}
+			/>
 			<div className="pointer-events-none z-10  flex transform-gpu flex-col gap-1 md:p-6 pl-4 transition-all duration-300 group-hover:-translate-y-10">
 				<h3 className="group-hover:opacity-0 transition-all duration-100 text-md font-semibold text-neutral-700 dark:text-neutral-300">
 					{name}

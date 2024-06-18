@@ -1,70 +1,16 @@
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 import { Tag } from "@/components/ui/tag";
-const Works = [
-	{
-		name: "Large Language Model",
-		description: "Medical field chat application.",
-		href: "/project/llm",
-		background: (
-			<img
-				src="/1.png"
-				className="border rounded-md absolute md:-right-36 md:-top-20 md:transition-all md:duration-300 md:ease-out md:scale-[0.6] md:group-hover:scale-100"
-				alt="Large Language Model"
-			/>
-		),
-	},
-	{
-		name: "Data Visualization",
-		description: "Chart and 3D models.",
-		href: "/project/data-visualization",
-		background: (
-			<img
-				src="/1.png"
-				className="border rounded-md absolute md:-right-36 md:-top-20 md:transition-all md:duration-300 md:ease-out md:scale-[0.6] md:group-hover:scale-100"
-				alt="Large Language Model"
-			/>
-		),
-	},
-	{
-		name: "Hybrid Mobile App",
-		description: "QQ Music / We Sing Living Room.",
-		href: "/project/tme",
-		background: (
-			<img
-				src="/1.png"
-				className="border rounded-md absolute md:-right-36 md:-top-20 md:transition-all md:duration-300 md:ease-out md:scale-[0.6] md:group-hover:scale-100"
-				alt="Large Language Model"
-			/>
-		),
-	},
-];
-
-const OpenSourceProjects = [
-	{
-		name: "Comments",
-		description: "Add comments to your website.",
-		href: "/project/comments",
-		background: (
-			<img
-				src="/1.png"
-				className="border rounded-md absolute md:-right-36 md:-top-20 md:transition-all md:duration-300 md:ease-out md:scale-[0.6] md:group-hover:scale-100"
-				alt="Large Language Model"
-			/>
-		),
-	},
-	{
-		name: "daviddong.me",
-		description: "Personal website template.",
-		href: "/",
-		background: (
-			<img
-				src="/1.png"
-				className="border rounded-md absolute md:-right-36 md:-top-20 md:transition-all md:duration-300 md:ease-out md:scale-[0.6] md:group-hover:scale-100"
-				alt="Large Language Model"
-			/>
-		),
-	},
-];
+import { OpenSourceProjects, Works } from "@/config/project";
+const ProjectLists = ({ title, items }) => (
+	<section>
+		<h3>{title}</h3>
+		<BentoGrid className="md:grid-rows-3">
+			{items.map((feature) => (
+				<BentoCard key={feature.name} {...feature} />
+			))}
+		</BentoGrid>
+	</section>
+);
 
 export default function Page() {
 	return (
@@ -95,25 +41,8 @@ export default function Page() {
 					free to contact me!
 				</p>
 			</section>
-
-			{/* Works */}
-			<section>
-				<h3>Works</h3>
-				<BentoGrid className="md:grid-rows-3">
-					{Works.map((feature) => (
-						<BentoCard key={feature.name} {...feature} />
-					))}
-				</BentoGrid>
-			</section>
-			{/* Open Source Project */}
-			<section>
-				<h3>Open Source Projects</h3>
-				<BentoGrid className="md:grid-rows-3">
-					{OpenSourceProjects.map((feature) => (
-						<BentoCard key={feature.name} {...feature} />
-					))}
-				</BentoGrid>
-			</section>
+			<ProjectLists title="Works" items={Works} />
+			<ProjectLists title="Open Source Projects" items={OpenSourceProjects} />
 		</article>
 	);
 }

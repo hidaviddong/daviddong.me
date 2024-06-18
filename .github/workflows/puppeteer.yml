@@ -3,7 +3,7 @@ name: Run Puppeteer Script
 on:
   push:
     branches:
-      - feat/puppeteer
+      - master
 
 jobs:
   run-puppeteer:
@@ -33,6 +33,8 @@ jobs:
       run: |
         git config --global user.name 'github-actions[bot]'
         git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git fetch origin master
+        git reset --soft FETCH_HEAD
         git add public/cv.pdf
         git commit -m "Remove old cv.pdf and update with new generated file"
-        git push
+        git push origin master --force

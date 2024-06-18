@@ -1,0 +1,24 @@
+name: Run Puppeteer Script
+
+on:
+  push:
+    branches:
+      - feat/puppeteer
+
+jobs:
+  run-puppeteer:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - uses: denoland/setup-deno@v1
+      with:
+        deno-version: v1.x
+
+    - name: Remove old cv.pdf
+      run: rm -f public/cv.pdf
+
+    - name: Run Puppeteer script
+      run: deno run -A scripts/puppeteer.js

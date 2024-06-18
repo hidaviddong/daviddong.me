@@ -1,0 +1,40 @@
+name: Run Puppeteer Script
+
+on:
+  push:
+    branches:
+      - master
+
+jobs:
+  run-puppeteer:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v2
+
+    - name: Set up Deno
+      uses: denoland/setup-deno@v1
+      with:
+        deno-version: v1.x
+
+    - name: Install Puppeteer
+      run: PUPPETEER_PRODUCT=chrome deno run -A --unstable https://deno.land/x/puppeteer@16.2.0/install.ts
+
+    - name: Remove old cv.pdf
+      run: rm -f public/cv.pdf
+
+    - name: Run Puppeteer script
+      run: deno run -A scripts/puppeteer.js
+      
+    - name: Commit and push changes
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git fetch origin master
+        git reset --soft FETCH_HEAD
+        git add public/cv.pdf
+        git commit -m "Remove old cv.pdf and update with new generated file"
+        git push origin master --force

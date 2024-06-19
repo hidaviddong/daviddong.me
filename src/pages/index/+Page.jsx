@@ -1,6 +1,9 @@
+import { Badge } from "@/components/ui/badge";
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
+import { MusicIcon } from "@/components/ui/icons";
 import { Tag } from "@/components/ui/tag";
 import { OpenSourceProjects, Works } from "@/config/project";
+import { navigate } from "vike/client/router";
 const ProjectLists = ({ title, items }) => (
 	<section>
 		<h3>{title}</h3>
@@ -30,16 +33,28 @@ export default function Page() {
 				</div>
 				<br />
 				<div className="text-neutral-500">
-					In my free time, I usually
-					<Tag text="play guitar" tooltip="R&B, Neo Soul, Gospel" />
-					and
-					<Tag text="watch movies" tooltip="Thriller, Tragicomedy" />. My favorite director is Woody
-					Allen.
+					In my free time, I usually play guitar and watch movies.
+					You can watch my
+					<Badge variant="outline" className="px-2 mx-1 text-sm hover:cursor-pointer" onClick={() => {
+						navigate("/music")
+					}}>
+						🎸 music video
+					</Badge>
+					and view my favorite
+					<Badge variant="outline" className="px-2 mx-1 text-sm hover:cursor-pointer" onClick={() => {
+						navigate("/list")
+					}}>
+						📃 art list
+					</Badge>
 				</div>
 				<p>
-					Recently, I moved to Hong Kong and am seeking a software development position. Please feel
-					free to contact me!
+					I recently moved to Hong Kong and am actively seeking a software development position.
+					Feel free to reach out to me!
 				</p>
+				<p>
+					Email me at <span className="font-mono text-neutral-800 hover:underline hover:underline-offset-2">hi@daviddong.me</span>
+				</p>
+
 			</section>
 			<ProjectLists title="Works" items={Works} />
 			<ProjectLists title="Open Source Projects" items={OpenSourceProjects} />

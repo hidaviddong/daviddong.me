@@ -13,13 +13,13 @@ const Works = [
 	},
 	{
 		name: "Hybrid Mobile App",
-		description: "QQ Music / We Sing Living Room.",
+		description: "QQ Music livestreaming Room.",
 		href: "/project/tme",
 		background: "/tme.webp",
 	},
 ];
 
-const OpenSourceProjects = [
+const SideProjects = [
 	{
 		name: "Comments",
 		description: "Add comments to your website.",
@@ -28,10 +28,10 @@ const OpenSourceProjects = [
 	},
 	{
 		name: "daviddong.me",
-		description: "Personal website template.",
+		description: "My website.",
 		href: "/project/website",
 		background: "/daviddong.webp",
 	},
 ];
 
-export { Works, OpenSourceProjects };
+export { Works, SideProjects };

@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button";
-import { OpenSourceProjects, Works } from "@/config/project";
+import { SideProjects, Works } from "@/config/project";
 import React from "react";
 import { navigate } from "vike/client/router";
 
@@ -26,7 +26,7 @@ export default function Page() {
 	return (
 		<main className="prose prose-p:text-neutral-500 p-12 h-screen">
 			<ProjectLists title="Works" items={Works} />
-			<ProjectLists title="Open Source Projects" items={OpenSourceProjects} />
+			<ProjectLists title="Side Projects" items={SideProjects} />
 		</main>
 	);
 }

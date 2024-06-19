@@ -1,6 +1,5 @@
 import { Badge } from "@/components/ui/badge";
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
-import { MusicIcon } from "@/components/ui/icons";
 import { Tag } from "@/components/ui/tag";
 import { SideProjects, Works } from "@/config/project";
 import { navigate } from "vike/client/router";
@@ -18,7 +17,7 @@ const ProjectLists = ({ title, items }) => (
 export default function Page() {
 	return (
 		<article className="prose prose-p:text-neutral-500 p-12">
-			<h1>Hey, I'm Haoyu</h1>
+			<h1>Hi, I'm Haoyu</h1>
 			{/* about me */}
 			<section>
 				<div className="text-neutral-500">

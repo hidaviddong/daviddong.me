@@ -1,7 +1,7 @@
 // Environment: Node.js
-import { OpenSourceProjects, Works } from "@/config/project";
+import { SideProjects, Works } from "@/config/project";
 export { onBeforePrerenderStart };
 async function onBeforePrerenderStart() {
-	const lists = [...OpenSourceProjects, ...Works];
+	const lists = [...SideProjects, ...Works];
 	return lists.map((list) => list.href);
 }

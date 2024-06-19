@@ -2,7 +2,7 @@ import { Badge } from "@/components/ui/badge";
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 import { MusicIcon } from "@/components/ui/icons";
 import { Tag } from "@/components/ui/tag";
-import { OpenSourceProjects, Works } from "@/config/project";
+import { SideProjects, Works } from "@/config/project";
 import { navigate } from "vike/client/router";
 const ProjectLists = ({ title, items }) => (
 	<section>
@@ -33,17 +33,24 @@ export default function Page() {
 				</div>
 				<br />
 				<div className="text-neutral-500">
-					In my free time, I usually play guitar and watch movies.
-					You can watch my
-					<Badge variant="outline" className="px-2 mx-1 text-sm hover:cursor-pointer" onClick={() => {
-						navigate("/music")
-					}}>
+					In my free time, I usually play guitar and watch movies. You can watch my
+					<Badge
+						variant="outline"
+						className="px-2 mx-1 text-sm hover:cursor-pointer"
+						onClick={() => {
+							navigate("/music");
+						}}
+					>
 						🎸 music video
 					</Badge>
 					and view my favorite
-					<Badge variant="outline" className="px-2 mx-1 text-sm hover:cursor-pointer" onClick={() => {
-						navigate("/list")
-					}}>
+					<Badge
+						variant="outline"
+						className="px-2 mx-1 text-sm hover:cursor-pointer"
+						onClick={() => {
+							navigate("/list");
+						}}
+					>
 						📃 art list
 					</Badge>
 				</div>
@@ -52,12 +59,14 @@ export default function Page() {
 					Feel free to reach out to me!
 				</p>
 				<p>
-					Email me at <span className="font-mono text-neutral-800 hover:underline hover:underline-offset-2">hi@daviddong.me</span>
+					Email me at{" "}
+					<span className="font-mono text-neutral-800 hover:underline hover:underline-offset-2">
+						hi@daviddong.me
+					</span>
 				</p>
-
 			</section>
 			<ProjectLists title="Works" items={Works} />
-			<ProjectLists title="Open Source Projects" items={OpenSourceProjects} />
+			<ProjectLists title="Side Projects" items={SideProjects} />
 		</article>
 	);
 }

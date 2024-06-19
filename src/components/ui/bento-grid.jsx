@@ -1,14 +1,10 @@
 import { Button } from "@/components/ui/button";
-import { Separator } from "@/components/ui/separator"
+import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
 import { navigate } from "vike/client/router";
 import { ArrowRightIcon } from "./icons";
 const BentoGrid = ({ children, className }) => {
-	return (
-		<div className={cn("grid w-full grid-cols-2 gap-4", className)}>
-			{children}
-		</div>
-	);
+	return <div className={cn("grid w-full grid-cols-2 gap-4", className)}>{children}</div>;
 };
 
 const BentoCard = ({ name, className, background, description, href }) => {

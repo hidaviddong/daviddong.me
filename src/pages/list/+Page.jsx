@@ -1,7 +1,6 @@
 import { MusicPlayIcon } from "@/components/ui/icons";
+import { SONG_BASEURL, Songs } from "@/config/project";
 import React from "react";
-const SONG_BASEURL = "https://img1.doubanio.com/lpic/";
-
 function SongItem({ song }) {
 	return (
 		<div className="group w-full flex hover:bg-zinc-100 hover:rounded-md p-2">
@@ -27,15 +26,9 @@ function SongItem({ song }) {
 }
 
 function SongList() {
-	const songs = [
-		{ title: "Blue Moon", artist: "David Tao", url: "s4208287" },
-		{ title: "Love Words", artist: "Dean Ting", url: "s33545377" },
-		{ title: "After the Love Has Gone", artist: "Earth Wind & Fire", url: "s2558289" },
-	];
-
 	return (
 		<div className="flex flex-col w-full p-1 space-y-2">
-			{songs.map((song) => (
+			{Songs.map((song) => (
 				<SongItem key={song.title} song={song} />
 			))}
 		</div>
@@ -44,20 +37,18 @@ function SongList() {
 
 export default function Page() {
 	return (
-		<div className="h-screen w-full flex flex-col justify-center items-center">
-			<div className="flex flex-col h-full justify-center items-center gap-12">
+		<div className="w-full flex flex-col justify-center items-center">
+			<div className="flex flex-col h-full justify-center items-center gap-12 mt-4">
 				<div className="flex flex-col justify-center items-center gap-2">
 					<div className="rounded-md w-72 h-72 drop-shadow-md border bg-gradient-to-br from-[#ebebeb] via-[#efdfe0] to-[#0a4f9e]  p-4">
 						<span className="text-4xl font-semibold text-black/90">David Dong's Playlist</span>
 					</div>
 					<div className="text-2xl font-semibold text-black/90">David Dong's Playlist</div>
 					<h2 className="text-[#d60017] text-xl font-normal">David Dong</h2>
-					<div className="uppercase text-xs font-semibold text-black/50">updated TODAY</div>
-					<div className="uppercase text-[13px] text-black/50">R&B Neo Soul Gospel</div>
+					<div className="text-[13px] text-black/50">R&B Neo Soul Gospel</div>
 				</div>
 				<SongList />
 			</div>
-			<h1>Movie List</h1>
 		</div>
 	);
 }

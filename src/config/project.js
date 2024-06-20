@@ -39,7 +39,7 @@ const Songs = [
 	{ title: "Blue Moon", artist: "David Tao", url: "s4208287" },
 	{ title: "Love Words", artist: "Dean Ting", url: "s33545377" },
 	{ title: "After the Love Has Gone", artist: "Earth Wind & Fire", url: "s2558289" },
-	{ title: "Regulate (feat. Nate Dogg)", artist: "Warren G", url: "s4208287" },
+	{ title: "Regulate (feat. Nate Dogg)", artist: "Warren G", url: "s28000661" },
 	{ title: "Nuthin' But A 'G' Thang", artist: "Dr. Dre, Snoop Dogg", url: "s34485730" },
 	{
 		title: "Can't Take My Eyes Off of You (I Love You Baby)",
@@ -54,6 +54,7 @@ const Songs = [
 	{ title: "Stan (feat. Dido)", artist: "Eminem", url: "s3809299" },
 	{ title: "Once in a Blue Moon (feat. Mavis Fan)", artist: "YELLOW", url: "s34869641" },
 	{ title: "My Only Girl", artist: "Khalil Fong", url: "s24459457" },
+	{ title: "Definition of Love", artist: "Khalil Fong", url: "s24459457" },
 	{ title: "Madoromi", artist: "Naoko Gushima", url: "s33289183" },
 ];
 

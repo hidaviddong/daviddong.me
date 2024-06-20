@@ -36,6 +36,7 @@ export default function Page() {
 					<Badge
 						variant="outline"
 						className="px-2 mx-1 text-sm hover:cursor-pointer"
+						data-umami-event="Music Button"
 						onClick={() => {
 							navigate("/music");
 						}}
@@ -46,6 +47,7 @@ export default function Page() {
 					<Badge
 						variant="outline"
 						className="px-2 mx-1 text-sm hover:cursor-pointer"
+						data-umami-event="List Button"
 						onClick={() => {
 							navigate("/list");
 						}}

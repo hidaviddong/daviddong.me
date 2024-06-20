@@ -14,6 +14,7 @@ export default function LayoutDefault({ children }) {
 			<main className="h-full w-full flex justify-center items-center flex-col">{children}</main>
 			<Dock className="fixed bottom-2 bg-white">
 				<DockIcon
+					data-umami-event="Github Button"
 					onClick={() => {
 						window.location.href = "https://github.com/DongHY1";
 					}}
@@ -21,6 +22,7 @@ export default function LayoutDefault({ children }) {
 					<GithubIcon className="h-6 w-6" />
 				</DockIcon>
 				<DockIcon
+					data-umami-event="Linekdin Button"
 					onClick={() => {
 						window.location.href = "https://www.linkedin.com/in/DongHY1";
 					}}
@@ -29,6 +31,7 @@ export default function LayoutDefault({ children }) {
 				</DockIcon>
 
 				<DockIcon
+					data-umami-event="Email Button"
 					onClick={() => {
 						window.location.href = "mailto:hi@daviddong.me";
 					}}
@@ -36,6 +39,7 @@ export default function LayoutDefault({ children }) {
 					<EmailIcon className="h-6 w-6" />
 				</DockIcon>
 				<DockIcon
+					data-umami-event="WhatsApp Button"
 					onClick={() => {
 						window.location.href = "https://wa.link/bbs3i9";
 					}}
@@ -43,6 +47,7 @@ export default function LayoutDefault({ children }) {
 					<WhatsAppIcon className="h-6 w-6" />
 				</DockIcon>
 				<DockIcon
+					data-umami-event="Resume Button"
 					onClick={() => {
 						navigate("/cv.pdf");
 					}}

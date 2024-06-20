@@ -30,7 +30,7 @@ const SideProjects = [
 		name: "daviddong.me",
 		description: "My website.",
 		href: "/project/website",
-		background: "/daviddong.webp",
+		background: "/website.webp",
 	},
 ];
 

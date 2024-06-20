@@ -9,10 +9,14 @@ import {
 import { navigate } from "vike/client/router";
 
 export default function LayoutDefault({ children }) {
+	const year = new Date().getFullYear()
 	return (
 		<div className="w-full h-full bg-dot-black/[0.2] selection:text-blue-500 selection:bg-blue-100 flex flex-col items-center">
 			<main className="h-full w-full flex justify-center items-center flex-col">{children}</main>
-			<Dock className="fixed bottom-2 bg-white">
+			<footer className="w-full text-center text-sm text-neutral-400">
+				<p>© {year} David Dong. All rights reserved.</p>
+			</footer>
+			<Dock className="fixed bottom-4 bg-white">
 				<DockIcon
 					data-umami-event="Github Button"
 					onClick={() => {

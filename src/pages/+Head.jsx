@@ -25,7 +25,11 @@ export default function HeaderDefault() {
 				content="Showcasing David Dong's projects, blogs, and contact information."
 			/>
 			<meta name="twitter:image" content="https://daviddong.me/og.png" />
-			<script defer src="https://cloud.umami.is/script.js" data-website-id="cd394c16-728f-4cc8-88cc-a17c369439cc"></script>
+			<script
+				defer
+				src="https://cloud.umami.is/script.js"
+				data-website-id="cd394c16-728f-4cc8-88cc-a17c369439cc"
+			></script>
 		</>
 	);
 }

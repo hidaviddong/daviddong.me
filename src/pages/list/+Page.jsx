@@ -1,11 +1,6 @@
-import { SongList, SongCover } from "./components/music";
+import { Tabs, TabsContent, TabsList, TabsTrigger } from "@/components/ui/tabs";
 import { MovieCover, MovieList } from "./components/movie";
-import {
-	Tabs,
-	TabsContent,
-	TabsList,
-	TabsTrigger,
-} from "@/components/ui/tabs"
+import { SongCover, SongList } from "./components/music";
 
 export default function Page() {
 	return (

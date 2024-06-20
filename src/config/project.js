@@ -65,34 +65,37 @@ const Movies = [
 	{
 		title: "Annie Hall",
 		year: "1977",
-		imageUrl: "MV5BZDg1OGQ4YzgtM2Y2NS00NjA3LWFjYTctMDRlMDI3NWE1OTUyXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300"
+		imageUrl:
+			"MV5BZDg1OGQ4YzgtM2Y2NS00NjA3LWFjYTctMDRlMDI3NWE1OTUyXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300",
 	},
 	{
 		title: "Take the Money and Run",
 		year: "1969",
-		imageUrl: "MV5BMjE2Mjc5NDg3OV5BMl5BanBnXkFtZTgwMzUxMjMyMTE@._V1_SX300"
+		imageUrl: "MV5BMjE2Mjc5NDg3OV5BMl5BanBnXkFtZTgwMzUxMjMyMTE@._V1_SX300",
 	},
 	{
 		title: "Following",
 		year: "1998",
-		imageUrl: "MV5BNDVhYTAyMDgtM2NhNS00MmQ3LWE0ZDMtNWIxMjlhODFmOWUwXkEyXkFqcGdeQXVyMTA5NjIyODcx._V1_SX300"
+		imageUrl:
+			"MV5BNDVhYTAyMDgtM2NhNS00MmQ3LWE0ZDMtNWIxMjlhODFmOWUwXkEyXkFqcGdeQXVyMTA5NjIyODcx._V1_SX300",
 	},
 	{
 		title: "Inception",
 		year: "2010",
-		imageUrl: "MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300"
+		imageUrl: "MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_SX300",
 	},
 	{
 		title: "Interstellar",
 		year: "2014",
-		imageUrl: "MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300"
+		imageUrl:
+			"MV5BZjdkOTU3MDktN2IxOS00OGEyLWFmMjktY2FiMmZkNWIyODZiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300",
 	},
 	{
 		title: "Memento",
 		year: "2000",
-		imageUrl: "MV5BZTcyNjk1MjgtOWI3Mi00YzQwLWI5MTktMzY4ZmI2NDAyNzYzXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300"
-	}
+		imageUrl:
+			"MV5BZTcyNjk1MjgtOWI3Mi00YzQwLWI5MTktMzY4ZmI2NDAyNzYzXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300",
+	},
 ];
-
 
 export { Works, SideProjects, SONG_BASEURL, Songs, Movies, MOVIE_BASEURL };

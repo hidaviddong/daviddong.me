@@ -1,17 +1,22 @@
 import { MusicPlayIcon } from "@/components/ui/icons";
 import React from "react";
-const SONG_BASEURL = "https://img1.doubanio.com/lpic/"
+const SONG_BASEURL = "https://img1.doubanio.com/lpic/";
 
 function SongItem({ song }) {
 	return (
 		<div className="group w-full flex hover:bg-zinc-100 hover:rounded-md p-2">
 			<div
 				style={{ backgroundImage: `url(${SONG_BASEURL}${song.url}.jpg)` }}
-				className="relative w-10 h-10 rounded-md border bg-slate-400 flex justify-center items-center bg-cover bg-center">
+				className="relative w-10 h-10 rounded-md border bg-slate-400 flex justify-center items-center bg-cover bg-center"
+			>
 				<div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity rounded-md"></div>
-				<MusicPlayIcon className="w-7 h-7 hidden group-hover:block z-10 cursor-pointer" onClick={() => {
-					window.location.href = "https://music.apple.com/tr/playlist/david-dongs-playlist/pl.u-leyl096uME0KMW6"
-				}} />
+				<MusicPlayIcon
+					className="w-7 h-7 hidden group-hover:block z-10 cursor-pointer"
+					onClick={() => {
+						window.location.href =
+							"https://music.apple.com/tr/playlist/david-dongs-playlist/pl.u-leyl096uME0KMW6";
+					}}
+				/>
 			</div>
 			<div className="flex flex-col justify-center ml-2">
 				<div className="text-black/80 text-[13px] font-normal">{song.title}</div>
@@ -21,12 +26,11 @@ function SongItem({ song }) {
 	);
 }
 
-
 function SongList() {
 	const songs = [
-		{ title: 'Blue Moon', artist: 'David Tao', url: 's4208287' },
-		{ title: 'Love Words', artist: 'Dean Ting', url: 's33545377' },
-		{ title: 'After the Love Has Gone', artist: 'Earth Wind & Fire', url: 's2558289' },
+		{ title: "Blue Moon", artist: "David Tao", url: "s4208287" },
+		{ title: "Love Words", artist: "Dean Ting", url: "s33545377" },
+		{ title: "After the Love Has Gone", artist: "Earth Wind & Fire", url: "s2558289" },
 	];
 
 	return (
@@ -37,7 +41,6 @@ function SongList() {
 		</div>
 	);
 }
-
 
 export default function Page() {
 	return (
@@ -55,6 +58,6 @@ export default function Page() {
 				<SongList />
 			</div>
 			<h1>Movie List</h1>
-		</div >
+		</div>
 	);
 }

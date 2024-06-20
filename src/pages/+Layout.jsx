@@ -9,7 +9,7 @@ import {
 import { navigate } from "vike/client/router";
 
 export default function LayoutDefault({ children }) {
-	const year = new Date().getFullYear()
+	const year = new Date().getFullYear();
 	return (
 		<div className="w-full h-full bg-dot-black/[0.2] selection:text-blue-500 selection:bg-blue-100 flex flex-col items-center">
 			<main className="h-full w-full flex justify-center items-center flex-col">{children}</main>

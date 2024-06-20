@@ -4,8 +4,8 @@ import { SongCover, SongList } from "./components/music";
 
 export default function Page() {
 	return (
-		<Tabs defaultValue="Music" className="h-full w-96 mt-12">
-			<TabsList className="grid w-full grid-cols-2 mb-4">
+		<Tabs defaultValue="Music" className="h-full w-96 mt-12 p-4">
+			<TabsList className="grid w-full grid-cols-2 mb-4 ">
 				<TabsTrigger value="Music">Music</TabsTrigger>
 				<TabsTrigger value="Movies">Movies</TabsTrigger>
 			</TabsList>

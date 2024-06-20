@@ -1,8 +1,5 @@
 import { Badge } from "@/components/ui/badge";
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
-import { Tag } from "@/components/ui/tag";
-import { SideProjects, Works } from "@/config/project";
-import { navigate } from "vike/client/router";
 import { Dock, DockIcon } from "@/components/ui/dock";
 import {
 	EmailIcon,
@@ -11,6 +8,9 @@ import {
 	ResumeIcon,
 	WhatsAppIcon,
 } from "@/components/ui/icons";
+import { Tag } from "@/components/ui/tag";
+import { SideProjects, Works } from "@/config/project";
+import { navigate } from "vike/client/router";
 const ProjectLists = ({ title, items }) => (
 	<section>
 		<h3>{title}</h3>

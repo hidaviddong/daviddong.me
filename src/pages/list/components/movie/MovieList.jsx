@@ -5,7 +5,7 @@ function MovieItem({ title, year, imageUrl }) {
 		<div className="flex group p-4 w-full hover:bg-zinc-100 hover:rounded-md">
 			<div
 				style={{ backgroundImage: `url('${MOVIE_BASEURL}${imageUrl}.jpg')` }}
-				className="rounded-md border drop-shadow-md flex justify-center items-center bg-cover bg-center h-44 w-32"
+				className="rounded-md border drop-shadow-md flex justify-center items-center bg-cover bg-center h-44 min-w-32"
 			></div>
 			<div className="flex flex-col justify-start items-start ml-4 gap-2">
 				<div className="text-black/80 font-normal">{title}</div>

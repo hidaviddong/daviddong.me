@@ -5,6 +5,5 @@ export default function Page() {
 			<MusicCover />
 			<MusicList />
 		</div>
-
 	);
 }

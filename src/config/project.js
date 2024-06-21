@@ -97,5 +97,94 @@ const Movies = [
 			"MV5BZTcyNjk1MjgtOWI3Mi00YzQwLWI5MTktMzY4ZmI2NDAyNzYzXkEyXkFqcGdeQXVyNjU0OTQ0OTY@._V1_SX300",
 	},
 ];
-
-export { Works, SideProjects, SONG_BASEURL, Songs, Movies, MOVIE_BASEURL };
+const MUSICVIDEO_BASEURL = "https://www.bilibili.com/video/";
+const Music = [
+	{
+		name: "Autumn Leaves",
+		author: "Joe Pass",
+		imageUrl: "autumn-leaves",
+		url: "BV1P24y1G7MZ",
+	},
+	{
+		name: "Blue Moon",
+		author: "David Tao",
+		imageUrl: "blue-moon",
+		url: "BV12M411e7L9",
+	},
+	{
+		name: "Seventeen",
+		author: "David Tao",
+		imageUrl: "seventeen",
+		url: "BV11f4y1R7H2",
+	},
+	{
+		name: "Slient Night",
+		author: "Joseph Mohr, Franz Xaver Gruber",
+		imageUrl: "slient-night",
+		url: "BV1e7411X7Yh",
+	},
+	{
+		name: "Everything's Gone",
+		author: "David Tao",
+		imageUrl: "everything-gone",
+		url: "BV1i7411u7Ur",
+	},
+	{
+		name: "Evergreen",
+		author: "Satoshi Gogo",
+		imageUrl: "evergreen",
+		url: "BV1xt411t71S",
+	},
+	{
+		name: "Santa Claus is Coming To Town",
+		author: "J. Fred Coots, Haven Gillespie",
+		imageUrl: "santa-claus-is-coming-to-town",
+		url: "BV1Ut411Y7uu",
+	},
+	{
+		name: "When I'm Sixty-Four",
+		author: "The Beatles",
+		imageUrl: "when-i-am-sixty-four",
+		url: "BV1St411Y7WS",
+	},
+	{
+		name: "Can't Buy Me Love",
+		author: "The Beatles",
+		imageUrl: "cant-buy-me-love",
+		url: "BV1Zt411m7XC",
+	},
+	{
+		name: "The Way Home",
+		author: "Satoshi Gogo",
+		imageUrl: "the-way-home",
+		url: "BV19s411L7P5",
+	},
+	{
+		name: "Waiting For The Wind",
+		author: "Satoshi Gogo",
+		imageUrl: "waiting-for-the-wind",
+		url: "BV13W411x7i6",
+	},
+	{
+		name: "The Capital",
+		author: "Satoshi Gogo",
+		imageUrl: "the-capital",
+		url: "BV1vW411J792",
+	},
+	{
+		name: "Love Under The Moon",
+		author: "Satoshi Gogo",
+		imageUrl: "love-under-the-moon",
+		url: "BV1CW411n7Jm",
+	},
+];
+export {
+	Works,
+	SideProjects,
+	SONG_BASEURL,
+	Songs,
+	Movies,
+	MOVIE_BASEURL,
+	Music,
+	MUSICVIDEO_BASEURL,
+};

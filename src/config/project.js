@@ -1,9 +1,9 @@
 const Works = [
 	{
-		name: "Large Language Model",
+		name: "AI Diagnosis Assistant",
 		description: "Medical field chat application.",
-		href: "/project/llm",
-		background: "/llm.webp",
+		href: "/project/ai",
+		background: "/ai.webp",
 	},
 	{
 		name: "Data Visualization",
@@ -30,7 +30,7 @@ const SideProjects = [
 		name: "daviddong.me",
 		description: "My website.",
 		href: "/project/website",
-		background: "/daviddong.webp",
+		background: "/website.webp",
 	},
 ];
 

@@ -40,18 +40,7 @@ export default function Page() {
 				</div>
 				<br />
 				<div className="text-neutral-500">
-					In my free time, I usually play guitar and watch movies. You can watch my
-					<Badge
-						variant="outline"
-						className="px-2 mx-1 text-sm hover:cursor-pointer"
-						data-umami-event="Music Button"
-						onClick={() => {
-							navigate("/music");
-						}}
-					>
-						🎸 music video
-					</Badge>
-					and view my favorite
+					In my free time, I usually play guitar and watch movies. Here is a list of my favorites
 					<Badge
 						variant="outline"
 						className="px-2 mx-1 text-sm hover:cursor-pointer"
@@ -60,8 +49,9 @@ export default function Page() {
 							navigate("/list");
 						}}
 					>
-						📃 art list
+						📃
 					</Badge>
+					.
 				</div>
 				<p>
 					I recently moved to Hong Kong and am actively seeking a software development position.
@@ -72,6 +62,7 @@ export default function Page() {
 					<span className="font-mono text-neutral-800 hover:underline hover:underline-offset-2">
 						hi@daviddong.me
 					</span>
+					.
 				</p>
 			</section>
 			<ProjectLists title="Works" items={Works} />

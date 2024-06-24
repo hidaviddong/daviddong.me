@@ -1,10 +1,10 @@
 import { MusicPlayIcon } from "@/components/ui/icons";
 import { Music } from "@/config/project";
 
-function MusicItem({ imageUrl, url, name, author }) {
+function VideoItem({ imageUrl, url, name, author }) {
 	const backgroundImageUrl = `/music/${imageUrl}.jpg`;
 	return (
-		<div className="group flex justify-center items-center hover:bg-zinc-100 hover:rounded-md p-2">
+		<div className="group hover:bg-zinc-100 hover:rounded-md p-2">
 			<div
 				style={{ backgroundImage: `url(${backgroundImageUrl})` }}
 				className="relative rounded-md drop-shadow-sm border min-w-56 h-36 bg-cover bg-center flex justify-center items-center"
@@ -17,19 +17,19 @@ function MusicItem({ imageUrl, url, name, author }) {
 					}}
 				/>
 			</div>
-			<div className="flex flex-col justify-center ml-2 w-full">
-				<div className="text-black/80 text-md font-normal">{name}</div>
+			<div className="flex flex-col justify-center ml-2 w-full mt-2">
+				<div className="text-black/80  font-normal">{name}</div>
 				<div className="text-black/50 text-sm font-normal">{author}</div>
 			</div>
 		</div>
 	);
 }
 
-export default function MusicList() {
+export default function VideoList() {
 	return (
 		<div className="flex flex-col p-1 space-y-2">
 			{Music.map((song) => (
-				<MusicItem
+				<VideoItem
 					key={song.name}
 					imageUrl={song.imageUrl}
 					url={song.url}

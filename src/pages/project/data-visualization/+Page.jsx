@@ -1,8 +1,8 @@
 import { Separator } from "@/components/ui/separator";
 import Baked from "./assets/baked.jpg";
+import EchartMap from "./assets/map.gif";
 import Model from "./assets/model.png";
 import Texture from "./assets/texture.png";
-import EchartMap from "./assets/map.gif"
 export default function Page() {
 	return (
 		<div className="flex flex-col">
@@ -52,13 +52,10 @@ export default function Page() {
 				</div>
 				<Separator />
 
-
 				<div className="flex flex-col justify-center items-center">
 					<img src={EchartMap} alt="map" className="bg-gray-50 border rounded-md my-0" />
 					<p className="my-0 mt-4 text-sm font-medium">Map</p>
-					<p className="my-0 text-neutral-400 text-sm">
-						Implement map interaction using ECharts
-					</p>
+					<p className="my-0 text-neutral-400 text-sm">Implement map interaction using ECharts</p>
 				</div>
 			</div>
 		</div>

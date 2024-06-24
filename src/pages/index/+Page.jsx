@@ -40,18 +40,8 @@ export default function Page() {
 				</div>
 				<br />
 				<div className="text-neutral-500">
-					In my free time, I usually play guitar and watch movies. You can watch my
-					<Badge
-						variant="outline"
-						className="px-2 mx-1 text-sm hover:cursor-pointer"
-						data-umami-event="Music Button"
-						onClick={() => {
-							navigate("/music");
-						}}
-					>
-						🎸 music video
-					</Badge>
-					and view my favorite
+					In my free time, I usually play guitar and watch movies. Here is a list of
+					my favorites lists
 					<Badge
 						variant="outline"
 						className="px-2 mx-1 text-sm hover:cursor-pointer"
@@ -60,7 +50,7 @@ export default function Page() {
 							navigate("/list");
 						}}
 					>
-						📃 art list
+						📃
 					</Badge>
 				</div>
 				<p>

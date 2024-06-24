@@ -51,6 +51,7 @@ export default function Page() {
 					>
 						📃
 					</Badge>
+					.
 				</div>
 				<p>
 					I recently moved to Hong Kong and am actively seeking a software development position.
@@ -61,6 +62,7 @@ export default function Page() {
 					<span className="font-mono text-neutral-800 hover:underline hover:underline-offset-2">
 						hi@daviddong.me
 					</span>
+					.
 				</p>
 			</section>
 			<ProjectLists title="Works" items={Works} />

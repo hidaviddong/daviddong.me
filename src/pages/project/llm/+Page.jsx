@@ -14,10 +14,10 @@ export default function Page() {
 			<div className="flex flex-col space-y-12">
 				<div className="flex flex-col justify-center items-center">
 					<div className="space-y-4">
-						<img src={ChatPageMain} alt="llm-cover" className="bg-gray-50 border rounded-md my-0" />
+						<img src={ChatPageMain} alt="chat-page-main" className="bg-gray-50 border rounded-md my-0" />
 						<img
 							src={ChatPageDialog}
-							alt="llm-cover"
+							alt="chat-page-dialog"
 							className="bg-gray-50 border rounded-md my-0"
 						/>
 					</div>
@@ -28,13 +28,13 @@ export default function Page() {
 					</p>
 				</div>
 				<div className="flex flex-col justify-center items-center">
-					<img src={Plugin} alt="llm-cover" className="bg-gray-50 border rounded-md my-0" />
+					<img src={Plugin} alt="plugin" className="bg-gray-50 border rounded-md my-0" />
 					<p className="my-0 mt-4 text-sm font-medium">Plugin System</p>
 					<p className="my-0 text-neutral-400 text-sm">Different roles have different plugins.</p>
 				</div>
 
 				<div className="flex flex-col justify-center items-center">
-					<img src={ChatPageImage} alt="llm-cover" className="bg-gray-50 border rounded-md my-0" />
+					<img src={ChatPageImage} alt="chat-page-image" className="bg-gray-50 border rounded-md my-0" />
 					<p className="my-0 mt-4 text-sm font-medium">Multimodal</p>
 					<p className="my-0 text-neutral-400 text-sm">Model can understand images.</p>
 				</div>
@@ -42,7 +42,7 @@ export default function Page() {
 				<div className="flex flex-col justify-center items-center">
 					<img
 						src={LiteratureSearch}
-						alt="llm-cover"
+						alt="literature-search"
 						className="bg-gray-50 border rounded-md my-0"
 					/>
 					<p className="my-0 mt-4 text-sm font-medium">Literature Search</p>

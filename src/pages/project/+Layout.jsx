@@ -1,3 +1,3 @@
 export default function Layout({ children }) {
-	return <div className="prose w-full h-screen flex flex-col justify-center">{children}</div>;
+	return <article className="prose p-12">{children}</article>;
 }

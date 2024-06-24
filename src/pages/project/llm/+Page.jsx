@@ -14,7 +14,11 @@ export default function Page() {
 			<div className="flex flex-col space-y-12">
 				<div className="flex flex-col justify-center items-center">
 					<div className="space-y-4">
-						<img src={ChatPageMain} alt="chat-page-main" className="bg-gray-50 border rounded-md my-0" />
+						<img
+							src={ChatPageMain}
+							alt="chat-page-main"
+							className="bg-gray-50 border rounded-md my-0"
+						/>
 						<img
 							src={ChatPageDialog}
 							alt="chat-page-dialog"
@@ -34,7 +38,11 @@ export default function Page() {
 				</div>
 
 				<div className="flex flex-col justify-center items-center">
-					<img src={ChatPageImage} alt="chat-page-image" className="bg-gray-50 border rounded-md my-0" />
+					<img
+						src={ChatPageImage}
+						alt="chat-page-image"
+						className="bg-gray-50 border rounded-md my-0"
+					/>
 					<p className="my-0 mt-4 text-sm font-medium">Multimodal</p>
 					<p className="my-0 text-neutral-400 text-sm">Model can understand images.</p>
 				</div>

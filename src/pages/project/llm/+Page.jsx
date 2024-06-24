@@ -1,53 +1,54 @@
-import ChatPageMain from './assets/chat-page-main.png'
-import ChatPageDialog from './assets/chat-page-dialog.png'
-import ChatPageImage from './assets/chat-page-img.png'
-import Plugin from './assets/plugin.png'
-import LiteratureSearch from './assets/literature-search.png'
+import ChatPageDialog from "./assets/chat-page-dialog.png";
+import ChatPageImage from "./assets/chat-page-img.png";
+import ChatPageMain from "./assets/chat-page-main.png";
+import LiteratureSearch from "./assets/literature-search.png";
+import Plugin from "./assets/plugin.png";
 export default function Page() {
 	return (
-		<div className='flex flex-col'>
-			<div className='font-medium text-base flex flex-col gap-1'>
-				<p className='my-0'>AI Diagnosis Assistant</p>
-				<p className='my-0'>2023 · Front-End Developer · Peking University Institute</p>
+		<div className="flex flex-col">
+			<div className="font-medium text-base flex flex-col gap-1">
+				<p className="my-0">AI Diagnosis Assistant</p>
+				<p className="my-0">2023 · Front-End Developer · Peking University Institute</p>
 			</div>
 			<p>Developed a chat application in medical field.</p>
-			<div className='flex flex-col space-y-12'>
-				<div className='flex flex-col justify-center items-center'>
-					<div className='space-y-4'>
-						<img src={ChatPageMain} alt='llm-cover' className='bg-gray-50 border rounded-md my-0' />
-						<img src={ChatPageDialog} alt='llm-cover' className='bg-gray-50 border rounded-md my-0' />
+			<div className="flex flex-col space-y-12">
+				<div className="flex flex-col justify-center items-center">
+					<div className="space-y-4">
+						<img src={ChatPageMain} alt="llm-cover" className="bg-gray-50 border rounded-md my-0" />
+						<img
+							src={ChatPageDialog}
+							alt="llm-cover"
+							className="bg-gray-50 border rounded-md my-0"
+						/>
 					</div>
 
-					<p className='my-0 mt-4 text-sm font-medium'>Chat Page</p>
-					<p className='my-0 text-neutral-400 text-sm'>
+					<p className="my-0 mt-4 text-sm font-medium">Chat Page</p>
+					<p className="my-0 text-neutral-400 text-sm">
 						You can view previous conversations or start a new one.
 					</p>
 				</div>
-				<div className='flex flex-col justify-center items-center'>
-					<img src={Plugin} alt='llm-cover' className='bg-gray-50 border rounded-md my-0' />
-					<p className='my-0 mt-4 text-sm font-medium'>Plugin System</p>
-					<p className='my-0 text-neutral-400 text-sm'>
-						Different roles have different plugins.
-					</p>
+				<div className="flex flex-col justify-center items-center">
+					<img src={Plugin} alt="llm-cover" className="bg-gray-50 border rounded-md my-0" />
+					<p className="my-0 mt-4 text-sm font-medium">Plugin System</p>
+					<p className="my-0 text-neutral-400 text-sm">Different roles have different plugins.</p>
 				</div>
 
-				<div className='flex flex-col justify-center items-center'>
-					<img src={ChatPageImage} alt='llm-cover' className='bg-gray-50 border rounded-md my-0' />
-					<p className='my-0 mt-4 text-sm font-medium'>Multimodal</p>
-					<p className='my-0 text-neutral-400 text-sm'>
-						Model can understand images.
-					</p>
+				<div className="flex flex-col justify-center items-center">
+					<img src={ChatPageImage} alt="llm-cover" className="bg-gray-50 border rounded-md my-0" />
+					<p className="my-0 mt-4 text-sm font-medium">Multimodal</p>
+					<p className="my-0 text-neutral-400 text-sm">Model can understand images.</p>
 				</div>
 
-				<div className='flex flex-col justify-center items-center'>
-					<img src={LiteratureSearch} alt='llm-cover' className='bg-gray-50 border rounded-md my-0' />
-					<p className='my-0 mt-4 text-sm font-medium'>Literature Search</p>
-					<p className='my-0 text-neutral-400 text-sm'>
-						Cite literature in conversations.
-					</p>
+				<div className="flex flex-col justify-center items-center">
+					<img
+						src={LiteratureSearch}
+						alt="llm-cover"
+						className="bg-gray-50 border rounded-md my-0"
+					/>
+					<p className="my-0 mt-4 text-sm font-medium">Literature Search</p>
+					<p className="my-0 text-neutral-400 text-sm">Cite literature in conversations.</p>
 				</div>
 			</div>
-
 		</div>
 	);
 }

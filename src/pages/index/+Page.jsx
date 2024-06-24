@@ -40,8 +40,8 @@ export default function Page() {
 				</div>
 				<br />
 				<div className="text-neutral-500">
-					In my free time, I usually play guitar and watch movies. Here is a list of
-					my favorites lists
+					In my free time, I usually play guitar and watch movies. Here is a list of my favorites
+					lists
 					<Badge
 						variant="outline"
 						className="px-2 mx-1 text-sm hover:cursor-pointer"

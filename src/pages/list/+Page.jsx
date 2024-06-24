@@ -3,7 +3,6 @@ import { MovieCover, MovieList } from "./components/movie";
 import { SongCover, SongList } from "./components/music";
 import { VideoCover, VideoList } from "./components/video";
 
-
 export default function Page() {
 	return (
 		<Tabs defaultValue="Music" className="h-full w-96 mt-12 p-4">

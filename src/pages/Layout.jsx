@@ -1,3 +1,4 @@
+import './index.css'
 export default function LayoutDefault({ children }) {
 	const year = new Date().getFullYear();
 	return (

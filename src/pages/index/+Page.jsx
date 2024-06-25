@@ -13,7 +13,7 @@ import { SideProjects, Works } from "@/config/project";
 import { navigate } from "vike/client/router";
 const ProjectLists = ({ title, items }) => (
 	<section>
-		<h3>{title}</h3>
+		<h2>{title}</h2>
 		<BentoGrid className="md:grid-rows-3">
 			{items.map((feature) => (
 				<BentoCard key={feature.name} {...feature} />

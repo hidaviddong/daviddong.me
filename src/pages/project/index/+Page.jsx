@@ -23,9 +23,9 @@ const ProjectLists = ({ title, items }) => (
 
 export default function Page() {
 	return (
-		<>
+		<article className="prose p-12">
 			<ProjectLists title="Works" items={Works} />
 			<ProjectLists title="Side Projects" items={SideProjects} />
-		</>
+		</article>
 	);
 }

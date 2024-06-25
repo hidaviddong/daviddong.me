@@ -1,10 +1,10 @@
 export { onRenderHtml }
 
-import React from 'react'
+import { parse } from 'node-html-parser';
 import { renderToString } from 'react-dom/server'
 import { escapeInject, dangerouslySkipEscape } from 'vike/server'
 import LayoutDefault from './Layout.jsx'
-
+import { imageMeta } from "image-meta";
 async function onRenderHtml(pageContext) {
   const { Page } = pageContext
   const viewHtml = dangerouslySkipEscape(
@@ -14,6 +14,14 @@ async function onRenderHtml(pageContext) {
       </LayoutDefault>
     )
   )
+  const root = parse(viewHtml._escaped);
+  const imgTags = root.querySelectorAll('img');
+
+  for (const img of imgTags) {
+    const imgUrl = img.getAttribute('src');
+    console.log(imgUrl)
+  }
+
 
   return escapeInject`<!DOCTYPE html>
     <html>

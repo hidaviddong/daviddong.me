@@ -1,5 +1,3 @@
-import game from "./assets/game.gif";
-import rank from "./assets/rank.gif";
 export default function Page() {
 	return (
 		<div className="flex flex-col">
@@ -11,7 +9,7 @@ export default function Page() {
 			<div className="flex flex-col space-y-12">
 				<div className="flex flex-col justify-center items-center">
 					<img
-						src={game}
+						src="/images/game.gif"
 						alt="game"
 						className="bg-gray-50 border rounded-md my-0"
 						width={774}
@@ -22,7 +20,7 @@ export default function Page() {
 				</div>
 				<div className="flex flex-col justify-center items-center">
 					<img
-						src={rank}
+						src="/images/rank.gif"
 						alt="rank"
 						className="bg-gray-50 border rounded-md my-0"
 						width={802}

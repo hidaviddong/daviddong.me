@@ -1,8 +1,3 @@
-import ChatPageDialog from "./assets/chat-page-dialog.png";
-import ChatPageImage from "./assets/chat-page-img.png";
-import ChatPageMain from "./assets/chat-page-main.png";
-import LiteratureSearch from "./assets/literature-search.png";
-import Plugin from "./assets/plugin.png";
 export default function Page() {
 	return (
 		<div className="flex flex-col">
@@ -15,17 +10,14 @@ export default function Page() {
 				<div className="flex flex-col justify-center items-center">
 					<div className="space-y-4">
 						<img
-							onLoad={() => {
-								console.log("i am loaded");
-							}}
-							src={ChatPageMain}
+							src="/images/chat-page-main.webp"
 							alt="chat-page-main"
 							className="bg-gray-50 border rounded-md my-0"
 							width={1912}
 							height={958}
 						/>
 						<img
-							src={ChatPageDialog}
+							src="/images/chat-page-dialog.webp"
 							alt="chat-page-dialog"
 							className="bg-gray-50 border rounded-md my-0"
 							width={1512}
@@ -39,14 +31,14 @@ export default function Page() {
 					</p>
 				</div>
 				<div className="flex flex-col justify-center items-center">
-					<img src={Plugin} alt="plugin" className="bg-gray-50 border rounded-md my-0" />
+					<img src="/images/plugin.webp" alt="plugin" className="bg-gray-50 border rounded-md my-0" width={1551} height={304} />
 					<p className="my-0 mt-4 text-sm font-medium">Plugin System</p>
 					<p className="my-0 text-neutral-400 text-sm">Different roles have different plugins.</p>
 				</div>
 
 				<div className="flex flex-col justify-center items-center">
 					<img
-						src={ChatPageImage}
+						src="/images/chat-page-image.webp"
 						alt="chat-page-image"
 						className="bg-gray-50 border rounded-md my-0"
 						width={1551}
@@ -58,7 +50,7 @@ export default function Page() {
 
 				<div className="flex flex-col justify-center items-center">
 					<img
-						src={LiteratureSearch}
+						src="/images/literature-search.webp"
 						alt="literature-search"
 						className="bg-gray-50 border rounded-md my-0"
 						width={1912}

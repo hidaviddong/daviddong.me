@@ -1,9 +1,4 @@
 import { Separator } from "@/components/ui/separator";
-import Baked from "./assets/baked.jpg";
-import EEG from "./assets/eeg.gif";
-import EchartMap from "./assets/map.gif";
-import Model from "./assets/model.png";
-import Texture from "./assets/texture.png";
 export default function Page() {
 	return (
 		<div className="flex flex-col">
@@ -32,7 +27,7 @@ export default function Page() {
 				</div>
 				<div className="flex flex-col justify-center items-center">
 					<img
-						src={Model}
+						src="/images/model.webp"
 						alt="model"
 						className="bg-gray-50 border rounded-md my-0"
 						width={2240}
@@ -43,7 +38,7 @@ export default function Page() {
 				</div>
 				<div className="flex flex-col justify-center items-center">
 					<img
-						src={Baked}
+						src="/images/baked.webp"
 						alt="baked"
 						className="bg-gray-50 border rounded-md my-0"
 						width={4096}
@@ -57,7 +52,7 @@ export default function Page() {
 
 				<div className="flex flex-col justify-center items-center">
 					<img
-						src={Texture}
+						src="/images/texture.webp"
 						alt="texture"
 						className="bg-gray-50 border rounded-md my-0"
 						width={2229}
@@ -73,7 +68,7 @@ export default function Page() {
 
 				<div className="flex flex-col justify-center items-center">
 					<img
-						src={EchartMap}
+						src="/images/map.gif"
 						alt="map"
 						className="bg-gray-50 border rounded-md my-0"
 						width={800}
@@ -87,7 +82,7 @@ export default function Page() {
 
 				<div className="flex flex-col justify-center items-center">
 					<img
-						src={EEG}
+						src="/images/eeg.gif"
 						alt="EEG"
 						className="bg-gray-50 border rounded-md my-0"
 						width={1782}

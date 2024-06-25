@@ -15,7 +15,7 @@ export default function HeaderDefault() {
 				property="og:description"
 				content="Showcasing David Dong's projects, blogs, and contact information."
 			/>
-			<meta property="og:image" content="https://daviddong.me/og.png" />
+			<meta property="og:image" content="https://daviddong.me/og.webp" />
 			<meta property="og:url" content="https://daviddong.me" />
 			<meta property="og:type" content="website" />
 			<meta name="twitter:card" content="summary_large_image" />
@@ -24,7 +24,7 @@ export default function HeaderDefault() {
 				name="twitter:description"
 				content="Showcasing David Dong's projects, blogs, and contact information."
 			/>
-			<meta name="twitter:image" content="https://daviddong.me/og.png" />
+			<meta name="twitter:image" content="https://daviddong.me/og.webp" />
 			<script
 				defer
 				src="https://cloud.umami.is/script.js"

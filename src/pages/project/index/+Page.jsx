@@ -1,6 +1,5 @@
 import { Button } from "@/components/ui/button";
 import { SideProjects, Works } from "@/config/project";
-import React from "react";
 import { navigate } from "vike/client/router";
 
 const ProjectLists = ({ title, items }) => (

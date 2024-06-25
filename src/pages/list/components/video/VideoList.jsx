@@ -2,7 +2,7 @@ import { MusicPlayIcon } from "@/components/ui/icons";
 import { Music } from "@/config/project";
 
 function VideoItem({ imageUrl, url, name, author }) {
-	const backgroundImageUrl = `/music/${imageUrl}.jpg`;
+	const backgroundImageUrl = `/images/${imageUrl}.webp`;
 	return (
 		<div className="group hover:bg-zinc-100 hover:rounded-md p-2">
 			<div

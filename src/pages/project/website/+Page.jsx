@@ -1,5 +1,3 @@
-import DavidDongMobile from "./assets/daviddong-mobile.png";
-import Puppeteer from "./assets/puppeteer.png";
 export default function Page() {
 	return (
 		<div className="flex flex-col">
@@ -11,7 +9,7 @@ export default function Page() {
 			<div className="flex flex-col justify-center items-center">
 				<div className="flex max-w-full w-3/4">
 					<img
-						src={DavidDongMobile}
+						src="/images/daviddong-mobile.webp"
 						alt="daviddong-mobile"
 						className="bg-gray-50 border rounded-md my-0"
 						width={1669}
@@ -32,7 +30,7 @@ export default function Page() {
 
 			<div className="flex flex-col justify-center items-center mt-4">
 				<img
-					src={Puppeteer}
+					src="/images/puppeteer.webp"
 					alt="puppeteer"
 					className="bg-gray-50 border rounded-md my-0"
 					width={1608}

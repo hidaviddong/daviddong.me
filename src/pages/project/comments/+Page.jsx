@@ -1,4 +1,3 @@
-import Comments from "./assets/comments.gif";
 export default function Page() {
 	return (
 		<div className="flex flex-col">
@@ -9,7 +8,7 @@ export default function Page() {
 			<p>Add comments to your website.</p>
 			<div className="flex flex-col justify-center items-center">
 				<img
-					src={Comments}
+					src="/images/comments.gif"
 					alt="comments"
 					className="bg-gray-50 border rounded-md my-0"
 					width={800}

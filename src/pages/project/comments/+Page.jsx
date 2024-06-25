@@ -1,3 +1,4 @@
+import { Image } from "@/components/ui/image";
 export default function Page() {
 	return (
 		<div className="flex flex-col">
@@ -7,12 +8,10 @@ export default function Page() {
 			</div>
 			<p>Add comments to your website.</p>
 			<div className="flex flex-col justify-center items-center">
-				<img
+				<Image
 					src="/images/comments.gif"
 					alt="comments"
 					className="bg-gray-50 border rounded-md my-0"
-					width={800}
-					height={495}
 				/>
 				{/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
 				<p

@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import { BentoCard, BentoGrid, BentoImage } from "@/components/ui/bento-grid";
+import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 import { Dock, DockIcon } from "@/components/ui/dock";
 import {
 	EmailIcon,
@@ -8,6 +8,7 @@ import {
 	ResumeIcon,
 	WhatsAppIcon,
 } from "@/components/ui/icons";
+import { Image } from "@/components/ui/image";
 import { Tag } from "@/components/ui/tag";
 import { SideProjects, Works } from "@/config/project";
 import { navigate } from "vike/client/router";
@@ -17,7 +18,7 @@ const ProjectLists = ({ title, items }) => (
 		<BentoGrid className="md:grid-rows-3">
 			{items.map((feature) => (
 				<BentoCard key={feature.name} {...feature} >
-					<BentoImage src={feature.background} alt={feature.name} />
+					<Image src={feature.background} alt={feature.name} />
 				</BentoCard>
 			))}
 		</BentoGrid>

@@ -1,4 +1,5 @@
 import { Separator } from "@/components/ui/separator";
+import { Image } from "@/components/ui/image";
 export default function Page() {
 	return (
 		<div className="flex flex-col">
@@ -26,23 +27,19 @@ export default function Page() {
 					</p>
 				</div>
 				<div className="flex flex-col justify-center items-center">
-					<img
+					<Image
 						src="/images/model.webp"
 						alt="model"
 						className="bg-gray-50 border rounded-md my-0"
-						width={2240}
-						height={1294}
 					/>
 					<p className="my-0 mt-4 text-sm font-medium">Model</p>
 					<p className="my-0 text-neutral-400 text-sm">Create models in Blender.</p>
 				</div>
 				<div className="flex flex-col justify-center items-center">
-					<img
+					<Image
 						src="/images/baked.webp"
 						alt="baked"
 						className="bg-gray-50 border rounded-md my-0"
-						width={4096}
-						height={4096}
 					/>
 					<p className="my-0 mt-4 text-sm font-medium">Baked</p>
 					<p className="my-0 text-neutral-400 text-sm">
@@ -51,12 +48,10 @@ export default function Page() {
 				</div>
 
 				<div className="flex flex-col justify-center items-center">
-					<img
+					<Image
 						src="/images/texture.webp"
 						alt="texture"
 						className="bg-gray-50 border rounded-md my-0"
-						width={2229}
-						height={1218}
 					/>
 
 					<p className="my-0 mt-4 text-sm font-medium">Texture & Shader</p>
@@ -67,12 +62,10 @@ export default function Page() {
 				<Separator />
 
 				<div className="flex flex-col justify-center items-center">
-					<img
+					<Image
 						src="/images/map.gif"
 						alt="map"
 						className="bg-gray-50 border rounded-md my-0"
-						width={800}
-						height={452}
 					/>
 					<p className="my-0 mt-4 text-sm font-medium">Map</p>
 					<p className="my-0 text-neutral-400 text-sm">Implement map interaction using ECharts.</p>
@@ -81,12 +74,10 @@ export default function Page() {
 				<Separator />
 
 				<div className="flex flex-col justify-center items-center">
-					<img
+					<Image
 						src="/images/eeg.gif"
 						alt="EEG"
 						className="bg-gray-50 border rounded-md my-0"
-						width={1782}
-						height={954}
 					/>
 					<p className="my-0 mt-4 text-sm font-medium">Spectral Analysis</p>
 					<p className="my-0 text-neutral-400 text-sm">An EEG Analysis editor website.</p>

@@ -4,8 +4,6 @@ const Image = ({ className, ...props }) => {
     // biome-ignore lint/a11y/useAltText: <explanation>
     return <img
         className={finalClasses}
-        width={width}
-        height={height}
         {...props}
     />
 }

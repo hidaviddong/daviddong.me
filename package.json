@@ -7,8 +7,7 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "check": "bun biome check --write",
-    "prepare": "husky"
+    "check": "bun biome check --write"
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.1",
@@ -17,7 +16,7 @@
     "@types/react-dom": "^18.3.0",
     "@vitejs/plugin-react": "^4.3.1",
     "autoprefixer": "^10.4.19",
-    "husky": "^9.0.11",
+    "lefthook": "^1.6.18",
     "postcss": "^8.4.38",
     "tailwindcss": "^3.4.4",
     "vite": "^5.2.13"

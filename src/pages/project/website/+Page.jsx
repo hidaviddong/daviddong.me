@@ -1,5 +1,5 @@
 import DavidDongMobile from "./assets/daviddong-mobile.png";
-import Puppeteer from './assets/puppeteer.png'
+import Puppeteer from "./assets/puppeteer.png";
 export default function Page() {
 	return (
 		<div className="flex flex-col">
@@ -31,7 +31,9 @@ export default function Page() {
 			<div className="flex flex-col justify-center items-center mt-4">
 				<img src={Puppeteer} alt="puppeteer" className="bg-gray-50 border rounded-md my-0" />
 				<p className="my-0 mt-4 text-sm font-medium">Puppeteer</p>
-				<p className="my-0 text-neutral-400 text-sm">Use Puppeteer and GitHub Actions to automatically scrape the latest resume.</p>
+				<p className="my-0 text-neutral-400 text-sm">
+					Use Puppeteer and GitHub Actions to automatically scrape the latest resume.
+				</p>
 			</div>
 		</div>
 	);

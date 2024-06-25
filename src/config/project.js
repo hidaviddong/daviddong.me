@@ -21,16 +21,16 @@ const Works = [
 
 const SideProjects = [
 	{
-		name: "Comments",
-		description: "Add comments to your website.",
-		href: "/project/comments",
-		background: "/comments.webp",
-	},
-	{
 		name: "daviddong.me",
 		description: "My website.",
 		href: "/project/website",
 		background: "/website.webp",
+	},
+	{
+		name: "Comments",
+		description: "Add comments to your website.",
+		href: "/project/comments",
+		background: "/comments.webp",
 	},
 ];
 

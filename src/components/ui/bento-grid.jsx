@@ -29,12 +29,8 @@ const BentoCard = ({ name, className, background, description, href }) => {
 			/>
 			<Separator className="md:hidden" />
 			<div className="pointer-events-none z-10  flex transform-gpu flex-col gap-1 md:p-6 pl-4 transition-all duration-200 group-hover:opacity-0">
-				<h3 className="text-md font-semibold text-neutral-700 dark:text-neutral-300">
-					{name}
-				</h3>
-				<p className="max-w-lg text-neutral-400 text-sm">
-					{description}
-				</p>
+				<h3 className="text-md font-semibold text-neutral-700 dark:text-neutral-300">{name}</h3>
+				<p className="max-w-lg text-neutral-400 text-sm">{description}</p>
 			</div>
 		</div>
 	);

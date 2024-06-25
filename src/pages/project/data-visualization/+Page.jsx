@@ -31,12 +31,12 @@ export default function Page() {
 					</p>
 				</div>
 				<div className="flex flex-col justify-center items-center">
-					<img src={Model} alt="model" className="bg-gray-50 border rounded-md my-0" />
+					<img src={Model} alt="model" className="bg-gray-50 border rounded-md my-0" width={2240} height={1294} />
 					<p className="my-0 mt-4 text-sm font-medium">Model</p>
 					<p className="my-0 text-neutral-400 text-sm">Create models in Blender.</p>
 				</div>
 				<div className="flex flex-col justify-center items-center">
-					<img src={Baked} alt="baked" className="bg-gray-50 border rounded-md my-0" />
+					<img src={Baked} alt="baked" className="bg-gray-50 border rounded-md my-0" width={4096} height={4096} />
 					<p className="my-0 mt-4 text-sm font-medium">Baked</p>
 					<p className="my-0 text-neutral-400 text-sm">
 						Baking in Blender to generate textures and improve loading performance.
@@ -44,7 +44,7 @@ export default function Page() {
 				</div>
 
 				<div className="flex flex-col justify-center items-center">
-					<img src={Texture} alt="texture" className="bg-gray-50 border rounded-md my-0" />
+					<img src={Texture} alt="texture" className="bg-gray-50 border rounded-md my-0" width={2229} height={1218} />
 
 					<p className="my-0 mt-4 text-sm font-medium">Texture & Shader</p>
 					<p className="my-0 text-neutral-400 text-sm">
@@ -54,7 +54,7 @@ export default function Page() {
 				<Separator />
 
 				<div className="flex flex-col justify-center items-center">
-					<img src={EchartMap} alt="map" className="bg-gray-50 border rounded-md my-0" />
+					<img src={EchartMap} alt="map" className="bg-gray-50 border rounded-md my-0" width={800} height={452} />
 					<p className="my-0 mt-4 text-sm font-medium">Map</p>
 					<p className="my-0 text-neutral-400 text-sm">Implement map interaction using ECharts.</p>
 				</div>
@@ -62,7 +62,7 @@ export default function Page() {
 				<Separator />
 
 				<div className="flex flex-col justify-center items-center">
-					<img src={EEG} alt="EEG" className="bg-gray-50 border rounded-md my-0" />
+					<img src={EEG} alt="EEG" className="bg-gray-50 border rounded-md my-0" width={1782} height={954} />
 					<p className="my-0 mt-4 text-sm font-medium">Spectral Analysis</p>
 					<p className="my-0 text-neutral-400 text-sm">An EEG Analysis editor website.</p>
 				</div>

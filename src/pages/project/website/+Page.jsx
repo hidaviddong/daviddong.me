@@ -14,6 +14,8 @@ export default function Page() {
 						src={DavidDongMobile}
 						alt="daviddong-mobile"
 						className="bg-gray-50 border rounded-md my-0"
+						width={1669}
+						height={2160}
 					/>
 				</div>
 
@@ -29,7 +31,7 @@ export default function Page() {
 			</div>
 
 			<div className="flex flex-col justify-center items-center mt-4">
-				<img src={Puppeteer} alt="puppeteer" className="bg-gray-50 border rounded-md my-0" />
+				<img src={Puppeteer} alt="puppeteer" className="bg-gray-50 border rounded-md my-0" width={1608} height={770} />
 				<p className="my-0 mt-4 text-sm font-medium">Puppeteer</p>
 				<p className="my-0 text-neutral-400 text-sm">
 					Use Puppeteer and GitHub Actions to automatically scrape the latest resume.

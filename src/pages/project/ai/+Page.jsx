@@ -15,14 +15,19 @@ export default function Page() {
 				<div className="flex flex-col justify-center items-center">
 					<div className="space-y-4">
 						<img
+							onLoad={() => { console.log('i am loaded') }}
 							src={ChatPageMain}
 							alt="chat-page-main"
 							className="bg-gray-50 border rounded-md my-0"
+							width={1912}
+							height={958}
 						/>
 						<img
 							src={ChatPageDialog}
 							alt="chat-page-dialog"
 							className="bg-gray-50 border rounded-md my-0"
+							width={1512}
+							height={416}
 						/>
 					</div>
 
@@ -42,6 +47,8 @@ export default function Page() {
 						src={ChatPageImage}
 						alt="chat-page-image"
 						className="bg-gray-50 border rounded-md my-0"
+						width={1551}
+						height={304}
 					/>
 					<p className="my-0 mt-4 text-sm font-medium">Multimodal</p>
 					<p className="my-0 text-neutral-400 text-sm">Model can understand images.</p>
@@ -52,6 +59,8 @@ export default function Page() {
 						src={LiteratureSearch}
 						alt="literature-search"
 						className="bg-gray-50 border rounded-md my-0"
+						width={1912}
+						height={958}
 					/>
 					<p className="my-0 mt-4 text-sm font-medium">Literature Search</p>
 					<p className="my-0 text-neutral-400 text-sm">Cite literature in conversations.</p>

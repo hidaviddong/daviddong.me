@@ -1,9 +1,9 @@
 import { Separator } from "@/components/ui/separator";
 import Baked from "./assets/baked.jpg";
+import EEG from "./assets/eeg.gif";
 import EchartMap from "./assets/map.gif";
 import Model from "./assets/model.png";
 import Texture from "./assets/texture.png";
-import EEG from './assets/eeg.gif'
 export default function Page() {
 	return (
 		<div className="flex flex-col">

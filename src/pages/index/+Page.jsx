@@ -1,5 +1,5 @@
 import { Badge } from "@/components/ui/badge";
-import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
+import { BentoCard, BentoGrid, BentoImage } from "@/components/ui/bento-grid";
 import { Dock, DockIcon } from "@/components/ui/dock";
 import {
 	EmailIcon,
@@ -16,7 +16,9 @@ const ProjectLists = ({ title, items }) => (
 		<h2>{title}</h2>
 		<BentoGrid className="md:grid-rows-3">
 			{items.map((feature) => (
-				<BentoCard key={feature.name} {...feature} />
+				<BentoCard key={feature.name} {...feature} >
+					<BentoImage src={feature.background} alt={feature.name} />
+				</BentoCard>
 			))}
 		</BentoGrid>
 	</section>

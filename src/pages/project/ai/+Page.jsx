@@ -15,9 +15,6 @@ export default function Page() {
 				<div className="flex flex-col justify-center items-center">
 					<div className="space-y-4">
 						<img
-							onLoad={() => {
-								console.log("i am loaded");
-							}}
 							src={ChatPageMain}
 							alt="chat-page-main"
 							className="bg-gray-50 border rounded-md my-0"

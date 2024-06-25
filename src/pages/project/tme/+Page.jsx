@@ -12,13 +12,13 @@ export default function Page() {
 				<div className="flex flex-col justify-center items-center">
 					<img src={game} alt="game" className="bg-gray-50 border rounded-md my-0" />
 					<p className="my-0 mt-4 text-sm font-medium">Mini game</p>
-					<p className="my-0 text-neutral-400 text-sm">Mini-games in the live streaming room</p>
+					<p className="my-0 text-neutral-400 text-sm">Mini-games in the live streaming room.</p>
 				</div>
 				<div className="flex flex-col justify-center items-center">
 					<img src={rank} alt="rank" className="bg-gray-50 border rounded-md my-0" />
 					<p className="my-0 mt-4 text-sm font-medium">Rank List</p>
 					<p className="my-0 text-neutral-400 text-sm">
-						View the ranking of users in the live streaming room
+						View the ranking of users in the live streaming room.
 					</p>
 				</div>
 			</div>

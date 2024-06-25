@@ -5,6 +5,7 @@ import { renderToString } from 'react-dom/server'
 import { escapeInject, dangerouslySkipEscape } from 'vike/server'
 import LayoutDefault from './Layout.jsx'
 import { imageMeta } from "image-meta";
+import { readFile } from 'node:fs/promises';
 async function onRenderHtml(pageContext) {
   const { Page } = pageContext
   const viewHtml = dangerouslySkipEscape(
@@ -19,10 +20,16 @@ async function onRenderHtml(pageContext) {
 
   for (const img of imgTags) {
     const imgUrl = img.getAttribute('src');
-    console.log(imgUrl)
+    try {
+      const data = await readFile(`public${imgUrl}`)
+      const { width, height } = imageMeta(data);
+      img.setAttribute('width', width)
+      img.setAttribute('height', height)
+    } catch (error) {
+      console.error('Error reading the image file:', error);
+    }
   }
-
-
+  viewHtml._escaped = root.toString()
   return escapeInject`<!DOCTYPE html>
     <html>
       <head>

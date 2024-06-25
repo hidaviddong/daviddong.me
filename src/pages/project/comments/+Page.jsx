@@ -8,7 +8,13 @@ export default function Page() {
 			</div>
 			<p>Add comments to your website.</p>
 			<div className="flex flex-col justify-center items-center">
-				<img src={Comments} alt="comments" className="bg-gray-50 border rounded-md my-0" width={800} height={495} />
+				<img
+					src={Comments}
+					alt="comments"
+					className="bg-gray-50 border rounded-md my-0"
+					width={800}
+					height={495}
+				/>
 				{/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
 				<p
 					className="my-0 mt-4 text-sm font-medium hover:underline hover:cursor-pointer"

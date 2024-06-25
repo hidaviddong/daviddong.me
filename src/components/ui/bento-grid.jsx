@@ -28,27 +28,14 @@ const BentoCard = ({ name, className, background, description, href }) => {
 				alt={name}
 			/>
 			<Separator className="md:hidden" />
-			<div className="pointer-events-none z-10  flex transform-gpu flex-col gap-1 md:p-6 pl-4 transition-all duration-300 group-hover:-translate-y-10">
-				<h3 className="group-hover:opacity-0 transition-all duration-100 text-md font-semibold text-neutral-700 dark:text-neutral-300">
+			<div className="pointer-events-none z-10  flex transform-gpu flex-col gap-1 md:p-6 pl-4 transition-all duration-200 group-hover:opacity-0">
+				<h3 className="text-md font-semibold text-neutral-700 dark:text-neutral-300">
 					{name}
 				</h3>
-				<p className="group-hover:opacity-0 transition-all duration-100 max-w-lg text-neutral-400 text-sm">
+				<p className="max-w-lg text-neutral-400 text-sm">
 					{description}
 				</p>
 			</div>
-
-			<div
-				className={cn(
-					"pointer-events-none absolute bottom-0 flex w-full translate-y-10 transform-gpu flex-row items-center p-4 opacity-0 transition-all duration-300 group-hover:translate-y-0 group-hover:opacity-100",
-				)}
-			>
-				<Button variant="ghost" asChild size="sm" className="pointer-events-auto">
-					<a href={href}>
-						<ArrowRightIcon className="h-4 w-4" />
-					</a>
-				</Button>
-			</div>
-			<div className="pointer-events-none absolute inset-0 transform-gpu transition-all duration-300 group-hover:bg-black/[.03] group-hover:dark:bg-neutral-800/10" />
 		</div>
 	);
 };

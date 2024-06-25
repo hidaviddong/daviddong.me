@@ -5,7 +5,7 @@ const BentoGrid = ({ children, className }) => {
 	return <div className={cn("grid w-full grid-cols-2 gap-4", className)}>{children}</div>;
 };
 
-const BentoCard = ({ name, className, background, description, href }) => {
+const BentoCard = ({ name, className, background, description, href, children }) => {
 	return (
 		// biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
 		<div
@@ -20,13 +20,7 @@ const BentoCard = ({ name, className, background, description, href }) => {
 				className,
 			)}
 		>
-			<img
-				src={background}
-				className="border rounded-md md:absolute md:-right-36 md:-top-[90px] md:transition-all md:duration-300 md:ease-out md:scale-[0.6] md:group-hover:scale-100"
-				alt={name}
-				width={553}
-				height={368}
-			/>
+			{children}
 			<Separator className="md:hidden" />
 			<div className="pointer-events-none z-10  flex transform-gpu flex-col gap-1 md:p-6 pl-4 md:transition-all md:duration-200 md:group-hover:opacity-0">
 				<h3 className="text-md font-semibold text-neutral-700 dark:text-neutral-300">{name}</h3>

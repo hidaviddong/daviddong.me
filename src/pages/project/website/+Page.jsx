@@ -1,5 +1,5 @@
-import DavidDongMobile from "./assets/daviddong-mobile.png";
-import Puppeteer from "./assets/puppeteer.png";
+import { Image } from "@/components/ui/image";
+
 export default function Page() {
 	return (
 		<div className="flex flex-col">
@@ -10,12 +10,10 @@ export default function Page() {
 			<p>My Personal Website.</p>
 			<div className="flex flex-col justify-center items-center">
 				<div className="flex max-w-full w-3/4">
-					<img
-						src={DavidDongMobile}
+					<Image
+						src="/images/daviddong-mobile.webp"
 						alt="daviddong-mobile"
 						className="bg-gray-50 border rounded-md my-0"
-						width={1669}
-						height={2160}
 					/>
 				</div>
 
@@ -31,12 +29,10 @@ export default function Page() {
 			</div>
 
 			<div className="flex flex-col justify-center items-center mt-4">
-				<img
-					src={Puppeteer}
+				<Image
+					src="/images/puppeteer.webp"
 					alt="puppeteer"
 					className="bg-gray-50 border rounded-md my-0"
-					width={1608}
-					height={770}
 				/>
 				<p className="my-0 mt-4 text-sm font-medium">Puppeteer</p>
 				<p className="my-0 text-neutral-400 text-sm">

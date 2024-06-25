@@ -4,7 +4,7 @@ function SongItem({ song }) {
 	return (
 		<div className="group w-full flex hover:bg-zinc-100 hover:rounded-md p-2">
 			<div
-				style={{ backgroundImage: `url(${SONG_BASEURL}${song.url}.jpg)` }}
+				style={{ backgroundImage: `url(${SONG_BASEURL}${song.url}.webp)` }}
 				className="relative w-10 h-10 rounded-md border flex justify-center items-center bg-cover bg-center"
 			>
 				<div className="absolute inset-0 bg-black opacity-0 group-hover:opacity-50 transition-opacity rounded-md"></div>

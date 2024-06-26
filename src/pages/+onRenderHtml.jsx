@@ -1,29 +1,8 @@
 export { onRenderHtml }
 
-import { parse } from 'node-html-parser';
 import { renderToString } from 'react-dom/server'
 import { escapeInject, dangerouslySkipEscape } from 'vike/server'
 import LayoutDefault from './Layout.jsx'
-import { imageMeta } from "image-meta";
-import { readFile } from 'node:fs/promises';
-
-async function addImgAttribute(html) {
-  const root = parse(html);
-  const imgTags = root.querySelectorAll('img');
-
-  for (const img of imgTags) {
-    const imgUrl = img.getAttribute('src');
-    try {
-      const data = await readFile(`public${imgUrl}`)
-      const { width, height } = imageMeta(data);
-      img.setAttribute('width', width)
-      img.setAttribute('height', height)
-    } catch (error) {
-      console.error('Error reading the image file:', error);
-    }
-  }
-  return root.toString()
-}
 
 async function onRenderHtml(pageContext) {
   const { Page } = pageContext
@@ -34,7 +13,6 @@ async function onRenderHtml(pageContext) {
       </LayoutDefault>
     )
   )
-  viewHtml._escaped = await addImgAttribute(viewHtml._escaped)
   return escapeInject`<!DOCTYPE html>
     <html>
       <head>

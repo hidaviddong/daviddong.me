@@ -11,7 +11,6 @@ import {
 import { Image } from "@/components/ui/image";
 import { Tag } from "@/components/ui/tag";
 import { SideProjects, Works } from "@/config/project";
-import { navigate } from "vike/client/router";
 const ProjectLists = ({ title, items }) => (
 	<section>
 		<h2>{title}</h2>
@@ -49,7 +48,7 @@ export default function Page() {
 						className="px-2 mx-1 text-sm hover:cursor-pointer"
 						data-umami-event="List Button"
 						onClick={() => {
-							navigate("/list");
+							window.location.href = "/list"
 						}}
 					>
 						📃
@@ -61,7 +60,7 @@ export default function Page() {
 					Feel free to reach out to me!
 				</p>
 				<p>
-					Email me at{" "}
+					Email me at &nbsp;
 					<span className="font-mono text-neutral-800 hover:underline hover:underline-offset-2">
 						hi@daviddong.me
 					</span>
@@ -109,7 +108,7 @@ export default function Page() {
 					<DockIcon
 						data-umami-event="Resume Button"
 						onClick={() => {
-							navigate("/cv.pdf");
+							window.location.href = "/cv.pdf"
 						}}
 					>
 						<ResumeIcon className="h-6 w-6" />

@@ -29,7 +29,7 @@ async function onRenderHtml(pageContext) {
   const { Page } = pageContext
   const viewHtml = dangerouslySkipEscape(
     renderToString(
-      <LayoutDefault>
+      <LayoutDefault pageContext={pageContext}>
         <Page />
       </LayoutDefault>
     )

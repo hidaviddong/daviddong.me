@@ -1,6 +1,5 @@
 import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
-import { navigate } from "vike/client/router";
 const BentoGrid = ({ children, className }) => {
 	return <div className={cn("grid w-full grid-cols-2 gap-4", className)}>{children}</div>;
 };
@@ -10,7 +9,9 @@ const BentoCard = ({ name, className, background, description, href, children })
 		// biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
 		<div
 			key={name}
-			onClick={() => navigate(href)}
+			onClick={() => {
+				window.location.href = href
+			}}
 			className={cn(
 				"group relative col-span-2 flex flex-col justify-between overflow-hidden rounded-xl hover:cursor-pointer",
 				// light styles

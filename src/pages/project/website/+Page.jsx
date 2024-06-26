@@ -48,7 +48,7 @@ export default function Page() {
 	}, [])
 	return (
 		<article className="prose p-12">
-			<div className="flex flex-col">
+			<div className="flex flex-col w-full">
 				<div className="font-medium text-base flex flex-col gap-1">
 					<p className="my-0">daviddong.me</p>
 					<p className="my-0">2024 · Maintainer</p>
@@ -59,7 +59,7 @@ export default function Page() {
 						<Image
 							src="/images/daviddong-mobile.webp"
 							alt="daviddong-mobile"
-							className="bg-gray-50 border rounded-md my-0"
+							className="bg-gray-50 my-0"
 						/>
 					</div>
 
@@ -73,7 +73,6 @@ export default function Page() {
 						daviddong.me
 					</p>
 				</div>
-
 				<div className="flex flex-col justify-center items-center mt-4">
 					<Image
 						src="/images/puppeteer.webp"
@@ -87,21 +86,21 @@ export default function Page() {
 				</div>
 
 				<div className="flex flex-col justify-center items-center mt-4">
-					<div className="flex flex-col space-y-4">
+					<div className="flex flex-col justify-center items-center space-y-4 w-full ">
 						<Image
 							src="/images/image-optimization.webp"
 							alt="image-optimization"
 							className="bg-gray-50 border rounded-md my-0 w-full"
 						/>
 						{/* biome-ignore lint/security/noDangerouslySetInnerHtml: <explanation> */}
-						<div className="border rounded-md" dangerouslySetInnerHTML={{ __html: html }} />
+						<div className="prose border rounded-md md:w-full w-[320px] overflow-hidden" dangerouslySetInnerHTML={{ __html: html }} />
 					</div>
-
 					<p className="my-0 mt-4 text-sm font-medium">Image Optimization</p>
 					<p className="my-0 text-neutral-400 text-sm">
 						Size optimization, automatically determine image width and height .
 					</p>
 				</div>
+
 			</div>
 		</article>
 

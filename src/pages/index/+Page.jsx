@@ -1,6 +1,7 @@
 import { Badge } from "@/components/ui/badge";
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 import { Dock, DockIcon } from "@/components/ui/dock";
+import { navigate } from 'vike/client/router'
 import {
 	EmailIcon,
 	GithubIcon,
@@ -48,7 +49,7 @@ export default function Page() {
 						className="px-2 mx-1 text-sm hover:cursor-pointer"
 						data-umami-event="List Button"
 						onClick={() => {
-							window.location.href = "/list"
+							navigate("/list")
 						}}
 					>
 						📃
@@ -108,7 +109,7 @@ export default function Page() {
 					<DockIcon
 						data-umami-event="Resume Button"
 						onClick={() => {
-							window.location.href = "/cv.pdf"
+							navigate("/cv.pdf")
 						}}
 					>
 						<ResumeIcon className="h-6 w-6" />

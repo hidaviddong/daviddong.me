@@ -6,16 +6,9 @@ import { escapeInject, dangerouslySkipEscape } from 'vike/server'
 import LayoutDefault from './Layout.jsx'
 import { imageMeta } from "image-meta";
 import { readFile } from 'node:fs/promises';
-async function onRenderHtml(pageContext) {
-  const { Page } = pageContext
-  const viewHtml = dangerouslySkipEscape(
-    renderToString(
-      <LayoutDefault>
-        <Page />
-      </LayoutDefault>
-    )
-  )
-  const root = parse(viewHtml._escaped);
+
+async function addImgAttribute(html) {
+  const root = parse(html);
   const imgTags = root.querySelectorAll('img');
 
   for (const img of imgTags) {
@@ -29,7 +22,19 @@ async function onRenderHtml(pageContext) {
       console.error('Error reading the image file:', error);
     }
   }
-  viewHtml._escaped = root.toString()
+  return root.toString()
+}
+
+async function onRenderHtml(pageContext) {
+  const { Page } = pageContext
+  const viewHtml = dangerouslySkipEscape(
+    renderToString(
+      <LayoutDefault>
+        <Page />
+      </LayoutDefault>
+    )
+  )
+  viewHtml._escaped = await addImgAttribute(viewHtml._escaped)
   return escapeInject`<!DOCTYPE html>
     <html>
       <head>

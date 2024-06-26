@@ -1,23 +1,39 @@
 import sharp from "sharp";
-import { readdir, unlink } from "node:fs/promises";
+import { readdir, unlink, stat } from "node:fs/promises";
 import { extname, join } from 'path'
+import { redBright, greenBright, cyanBright, yellowBright } from 'ansis';
 const imagesDir = './public/images';
+
+async function getFileSize(filePath) {
+    try {
+        const stats = await stat(filePath);
+        return stats.size;
+    } catch (error) {
+        console.error(red(`Error getting size of ${filePath}: ${error}`))
+        return -1;
+    }
+}
+
+
 
 async function convertToWebp(inputFile, outputFile) {
     try {
+        const inputFileSize = await getFileSize(inputFile);
         await sharp(inputFile).toFormat('webp').toFile(outputFile)
-        console.log(`Converted ${inputFile} to ${outputFile}`);
+        const outputFileSize = await getFileSize(outputFile);
+        console.log(greenBright(`✅ Converted ${inputFile} to ${outputFile}`));
+        console.info(cyanBright(`🚀 Size reduction: ${((1 - outputFileSize / inputFileSize) * 100).toFixed(2)}%`));
     } catch (error) {
-        console.error(`Error converting ${inputFile}:`, error);
+        console.error(redBright(`❎ Error converting ${inputFile}: ${error}`));
     }
 }
 
 async function deleteOriginalFile(filePath) {
     try {
         await unlink(filePath);
-        console.log(`Deleted original file ${filePath}`);
+        console.log(yellowBright(`🗑️ Deleted original file ${filePath}`));
     } catch (error) {
-        console.error(`Error deleting file ${filePath}:`, error);
+        console.error(redBright(`❎ Error deleting file ${filePath}: ${error}`));
     }
 }
 
@@ -38,7 +54,7 @@ async function processImages() {
             }
         }));
     } catch (error) {
-        console.error('Error processing images:', error);
+        console.error(redBright(`❎ Error processing images:${error}`));
     }
 }
 processImages()

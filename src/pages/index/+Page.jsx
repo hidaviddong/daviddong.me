@@ -1,4 +1,5 @@
 import { Dock, DockIcon } from "@/components/ui/dock";
+import { prefetch } from 'vike/client/router'
 import {
 	EmailIcon,
 	GithubIcon,
@@ -12,7 +13,7 @@ const ProjectLists = ({ title, projects }) => (
 		<h2>{title}</h2>
 		<section className="w-full">
 			{projects.map((project) => (
-				<a aria-label={project.description} href={project.href} key={project.name} className="no-underline block hover:bg-zinc-100 ease-in-out duration-300 hover:rounded-md p-4 hover:cursor-pointer">
+				<a onMouseOver={() => prefetch(project.href)} onFocus={() => prefetch(project.href)} aria-label={project.description} href={project.href} key={project.name} className="no-underline block hover:bg-zinc-100 ease-in-out duration-300 hover:rounded-md p-4 hover:cursor-pointer">
 					<div className="text-zinc-700">{project.name}</div>
 					<div className="text-zinc-500 text-sm">{project.time} · {project.description}</div>
 				</a>
@@ -38,7 +39,7 @@ export default function Page() {
 
 				<p>
 					<span>In my free time, I usually play guitar and watch movies. Here is a</span>
-					<a aria-label="David Dong's project list" href="/list" className="text-zinc-500 mx-1 decoration-zinc-300 underline-offset-2 decoration-wavy   hover:decoration-zinc-400">list</a>
+					<a aria-label="David Dong's project list" onMouseOver={() => prefetch("/list")} onFocus={() => prefetch("/list")} href="/list" className="text-zinc-500 mx-1 decoration-zinc-300 underline-offset-2 decoration-wavy   hover:decoration-zinc-400">list</a>
 					<span>.</span>
 				</p>
 

@@ -1,4 +1,3 @@
-import "./index.css";
 export { Head }
 function Head() {
     return (

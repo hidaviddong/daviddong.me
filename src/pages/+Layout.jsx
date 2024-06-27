@@ -1,4 +1,6 @@
-export default function LayoutDefault({ children }) {
+import './index.css'
+export { Layout }
+function Layout({ children }) {
 	const year = new Date().getFullYear();
 	return (
 		<div className="w-full  selection:text-blue-500 selection:bg-blue-100 flex flex-col items-center">

@@ -44,7 +44,7 @@ export default function Page() {
 
 				<p>
 					I recently moved to Hong Kong and am actively seeking a software development position.
-					Feel free to reach out to me!
+					Feel free to reach out to me !
 				</p>
 
 				<p>

@@ -75,7 +75,7 @@ const DockIcon = ({
 	});
 
 	return (
-		<motion.div
+		<motion.a
 			ref={ref}
 			style={{ width }}
 			className={cn(
@@ -85,7 +85,7 @@ const DockIcon = ({
 			{...props}
 		>
 			{children}
-		</motion.div>
+		</motion.a>
 	);
 };
 

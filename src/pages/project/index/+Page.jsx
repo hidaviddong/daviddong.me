@@ -1,6 +1,5 @@
-import { Button } from "@/components/ui/button";
 import { SideProjects, Works } from "@/config/project";
-import { navigate } from "vike/client/router";
+
 
 const ProjectLists = ({ title, items }) => (
 	<section>
@@ -8,15 +7,13 @@ const ProjectLists = ({ title, items }) => (
 		<ul>
 			{items.map(({ name, href }) => (
 				<li key={name}>
-					<Button
+					<a
 						variant="link"
-						className="text-md text-neutral-500 hover:text-neutral-800"
-						onClick={() => {
-							navigate(href)
-						}}
+						className="no-underline text-md text-neutral-500 hover:text-neutral-800 text-primary underline-offset-4 hover:underline"
+						href={href}
 					>
 						{name}
-					</Button>
+					</a>
 				</li>
 			))}
 		</ul>

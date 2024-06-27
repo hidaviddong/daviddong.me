@@ -1,4 +1,5 @@
 import { Image } from "@/components/ui/image";
+import ChatPageMain from '/images/chat-page-main.webp'
 export default function Page() {
 	return (
 		<div className="flex flex-col">

@@ -1,7 +1,5 @@
-import { Badge } from "@/components/ui/badge";
 import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 import { Dock, DockIcon } from "@/components/ui/dock";
-import { navigate } from 'vike/client/router'
 import {
 	EmailIcon,
 	GithubIcon,
@@ -44,16 +42,9 @@ export default function Page() {
 				<br />
 				<div className="text-neutral-500">
 					In my free time, I usually play guitar and watch movies. Here is a list of my favorites
-					<Badge
-						variant="outline"
-						className="px-2 mx-1 text-sm hover:cursor-pointer"
-						data-umami-event="List Button"
-						onClick={() => {
-							navigate("/list")
-						}}
-					>
+					<a className="no-underline px-2 mx-1 text-sm hover:cursor-pointer" data-umami-event="List Button" href="/list" >
 						📃
-					</Badge>
+					</a>
 					.
 				</div>
 				<p>
@@ -75,42 +66,32 @@ export default function Page() {
 				<Dock className="fixed bottom-4 bg-white">
 					<DockIcon
 						data-umami-event="Github Button"
-						onClick={() => {
-							window.location.href = "https://github.com/DongHY1";
-						}}
+						href="https://github.com/DongHY1"
 					>
 						<GithubIcon className="h-6 w-6" />
 					</DockIcon>
 					<DockIcon
 						data-umami-event="Linekdin Button"
-						onClick={() => {
-							window.location.href = "https://www.linkedin.com/in/DongHY1";
-						}}
+						href="https://www.linkedin.com/in/DongHY1"
 					>
 						<LinkedInIcon className="h-6 w-6" />
 					</DockIcon>
 
 					<DockIcon
 						data-umami-event="Email Button"
-						onClick={() => {
-							window.location.href = "mailto:hi@daviddong.me";
-						}}
+						href="mailto:hi@daviddong.me"
 					>
 						<EmailIcon className="h-6 w-6" />
 					</DockIcon>
 					<DockIcon
 						data-umami-event="WhatsApp Button"
-						onClick={() => {
-							window.location.href = "https://wa.link/bbs3i9";
-						}}
+						href="https://wa.link/bbs3i"
 					>
 						<WhatsAppIcon className="h-6 w-6" />
 					</DockIcon>
 					<DockIcon
 						data-umami-event="Resume Button"
-						onClick={() => {
-							navigate("/cv.pdf")
-						}}
+						href="/cv.pdf"
 					>
 						<ResumeIcon className="h-6 w-6" />
 					</DockIcon>

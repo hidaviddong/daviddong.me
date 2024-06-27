@@ -13,15 +13,12 @@ export default function Page() {
 					alt="comments"
 					className="bg-gray-50 border rounded-md my-0"
 				/>
-				{/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
-				<p
-					className="my-0 mt-4 text-sm font-medium hover:underline hover:cursor-pointer"
-					onClick={() => {
-						window.location.href = "https://github.com/DongHY1/comments";
-					}}
+				<a
+					className="no-underline my-0 mt-4 text-sm font-medium hover:underline hover:cursor-pointer"
+					href="https://github.com/DongHY1/comments"
 				>
 					Comments
-				</p>
+				</a>
 			</div>
 		</div>
 

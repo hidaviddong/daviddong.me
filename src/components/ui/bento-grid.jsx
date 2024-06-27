@@ -1,20 +1,16 @@
 import { Separator } from "@/components/ui/separator";
 import { cn } from "@/lib/utils";
-import { navigate } from 'vike/client/router'
 const BentoGrid = ({ children, className }) => {
 	return <div className={cn("grid w-full grid-cols-2 gap-4", className)}>{children}</div>;
 };
 
 const BentoCard = ({ name, className, background, description, href, children }) => {
 	return (
-		// biome-ignore lint/a11y/useKeyWithClickEvents: <explanation>
-		<div
+		<a
+			href={href}
 			key={name}
-			onClick={() => {
-				navigate(href)
-			}}
 			className={cn(
-				"group relative col-span-2 flex flex-col justify-between overflow-hidden rounded-xl hover:cursor-pointer",
+				"no-underline group relative col-span-2 flex flex-col justify-between overflow-hidden rounded-xl hover:cursor-pointer",
 				// light styles
 				"bg-white [box-shadow:0_0_0_1px_rgba(0,0,0,.03),0_2px_4px_rgba(0,0,0,.05),0_12px_24px_rgba(0,0,0,.05)]",
 				// dark styles
@@ -28,7 +24,7 @@ const BentoCard = ({ name, className, background, description, href, children })
 				<h3 className="text-md font-semibold text-neutral-700 dark:text-neutral-300">{name}</h3>
 				<p className="max-w-lg text-neutral-400 text-sm">{description}</p>
 			</div>
-		</div>
+		</a>
 	);
 };
 

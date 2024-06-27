@@ -16,15 +16,12 @@ export default function Page() {
 						title="desktop"
 						className="w-full h-72 border rounded-md overflow-hidden"
 					/>
-					{/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
-					<p
-						className="my-0 mt-4 text-sm font-medium hover:underline hover:cursor-pointer"
-						onClick={() => {
-							window.location.href = "https://desktop.daviddong.me";
-						}}
+					<a
+						className="no-underline my-0 mt-4 text-sm font-medium hover:underline hover:cursor-pointer"
+						href="https://desktop.daviddong.me"
 					>
 						My Desktop Website
-					</p>
+					</a>
 				</div>
 				<div className="flex flex-col justify-center items-center">
 					<Image

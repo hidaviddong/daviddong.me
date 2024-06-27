@@ -19,15 +19,12 @@ export default function Page() {
 					/>
 				</div>
 
-				{/* biome-ignore lint/a11y/useKeyWithClickEvents: <explanation> */}
-				<p
-					className="my-0 mt-4 text-sm font-medium hover:underline hover:cursor-pointer"
-					onClick={() => {
-						window.location.href = "https://github.com/DongHY1/daviddong.me";
-					}}
+				<a
+					className="no-underline my-0 mt-4 text-sm font-medium hover:underline hover:cursor-pointer"
+					href="https://github.com/DongHY1/daviddong.me"
 				>
 					daviddong.me
-				</p>
+				</a>
 			</div>
 			<div className="flex flex-col justify-center items-center mt-4">
 				<Image

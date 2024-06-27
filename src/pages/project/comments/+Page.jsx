@@ -5,8 +5,8 @@ export default function Page() {
 	return (
 		<div className="flex flex-col">
 			<div className="font-medium text-base flex flex-col gap-1">
-				<p className="my-0">{project.name}</p>
-				<p className="my-0 text-zinc-400 text-sm">{project.time} · {project.description}</p>
+				<p className="my-0 text-zinc-700">{project.name}</p>
+				<p className="my-0 text-zinc-500 text-sm">{project.time} · {project.description}</p>
 			</div>
 			<p>Add comments to your website.</p>
 			<div className="flex flex-col justify-center items-center">

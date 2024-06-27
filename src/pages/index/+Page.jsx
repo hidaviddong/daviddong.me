@@ -13,8 +13,8 @@ const ProjectLists = ({ title, projects }) => (
 		<section className="w-full">
 			{projects.map((project) => (
 				<a aria-label={project.description} href={project.href} key={project.name} className="no-underline block hover:bg-zinc-100 ease-in-out duration-300 hover:rounded-md p-4 hover:cursor-pointer">
-					<div className="text-zinc-500">{project.name}</div>
-					<div className="text-zinc-400 text-sm">{project.time} · {project.description}</div>
+					<div className="text-zinc-700">{project.name}</div>
+					<div className="text-zinc-500 text-sm">{project.time} · {project.description}</div>
 				</a>
 			))}
 		</section>

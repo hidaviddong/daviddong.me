@@ -6,8 +6,8 @@ export default function Page() {
 	return (
 		<div className="flex flex-col">
 			<div className="font-medium text-base flex flex-col gap-1">
-				<p className="my-0">{project.name}</p>
-				<p className="my-0 text-zinc-400 text-sm">{project.time} · {project.description}</p>
+				<p className="my-0 text-zinc-700">{project.name}</p>
+				<p className="my-0 text-zinc-500 text-sm">{project.time} · {project.description}</p>
 			</div>
 			<p>A series of data visualization projects.</p>
 			<div className="flex flex-col space-y-12">
@@ -33,7 +33,7 @@ export default function Page() {
 						className="bg-gray-50 border rounded-md my-0"
 					/>
 					<p className="my-0 mt-4 text-sm font-medium">Model</p>
-					<p className="my-0 text-zinc-400 text-sm">Create models in Blender.</p>
+					<p className="my-0 text-zinc-500 text-sm">Create models in Blender.</p>
 				</div>
 				<div className="flex flex-col justify-center items-center">
 					<Image
@@ -42,7 +42,7 @@ export default function Page() {
 						className="bg-gray-50 border rounded-md my-0"
 					/>
 					<p className="my-0 mt-4 text-sm font-medium">Baked</p>
-					<p className="my-0 text-zinc-400 text-sm">
+					<p className="my-0 text-zinc-500 text-sm">
 						Baking in Blender to generate textures and improve loading performance.
 					</p>
 				</div>
@@ -55,7 +55,7 @@ export default function Page() {
 					/>
 
 					<p className="my-0 mt-4 text-sm font-medium">Texture & Shader</p>
-					<p className="my-0 text-zinc-400 text-sm">
+					<p className="my-0 text-zinc-500 text-sm">
 						Apply noise texture in the shader to generate a smoke effect.
 					</p>
 				</div>
@@ -68,7 +68,7 @@ export default function Page() {
 						className="bg-gray-50 border rounded-md my-0"
 					/>
 					<p className="my-0 mt-4 text-sm font-medium">Map</p>
-					<p className="my-0 text-zinc-400 text-sm">Implement map interaction using ECharts.</p>
+					<p className="my-0 text-zinc-500 text-sm">Implement map interaction using ECharts.</p>
 				</div>
 
 				<Separator />
@@ -80,7 +80,7 @@ export default function Page() {
 						className="bg-gray-50 border rounded-md my-0"
 					/>
 					<p className="my-0 mt-4 text-sm font-medium">Spectral Analysis</p>
-					<p className="my-0 text-zinc-400 text-sm">An EEG Analysis editor website.</p>
+					<p className="my-0 text-zinc-500 text-sm">An EEG Analysis editor website.</p>
 				</div>
 			</div>
 		</div>

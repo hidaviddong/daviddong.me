@@ -8,6 +8,7 @@ const ProjectLists = ({ title, items }) => (
 			{items.map(({ name, href }) => (
 				<li key={name}>
 					<a
+						aria-label={name}
 						variant="link"
 						className="no-underline text-md text-zinc-500 hover:text-zinc-800 text-primary underline-offset-4 hover:underline"
 						href={href}

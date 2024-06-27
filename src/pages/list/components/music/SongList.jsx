@@ -4,6 +4,7 @@ function SongItem({ song }) {
 	return (
 		<div className="group w-full flex hover:bg-zinc-100 hover:rounded-md p-2">
 			<a
+				aria-label="David Dong's Music List"
 				href="https://music.apple.com/tr/playlist/david-dongs-playlist/pl.u-leyl096uME0KMW6"
 				style={{ backgroundImage: `url(${SONG_BASEURL}${song.url}.jpg)` }}
 				className="relative w-10 h-10 rounded-md border flex justify-center items-center bg-cover bg-center"

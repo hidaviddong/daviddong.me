@@ -19,6 +19,7 @@ export default function Page() {
 						className="w-full h-72 border rounded-md overflow-hidden"
 					/>
 					<a
+						aria-label="David Dong's GitHub project Desktop"
 						className="no-underline my-0 mt-4 text-sm font-medium hover:underline hover:cursor-pointer"
 						href="https://desktop.daviddong.me"
 					>

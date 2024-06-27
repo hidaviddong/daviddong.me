@@ -20,6 +20,7 @@ export default function Page() {
 				</div>
 
 				<a
+					aria-label="David Dong's GitHub Website"
 					className="no-underline my-0 mt-4 text-sm font-medium hover:underline hover:cursor-pointer"
 					href="https://github.com/DongHY1/daviddong.me"
 				>

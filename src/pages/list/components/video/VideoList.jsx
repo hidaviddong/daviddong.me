@@ -7,6 +7,7 @@ function VideoItem({ imageUrl, url, name, author }) {
 	return (
 		<div className="group hover:bg-zinc-100 hover:rounded-md p-2">
 			<a
+				aria-label="David Dong's Video list"
 				style={{ backgroundImage: `url(${backgroundImageUrl})` }}
 				href={bilibiliVideoUrl}
 				className="relative rounded-md drop-shadow-sm border min-w-56 h-36 bg-cover bg-center flex justify-center items-center"

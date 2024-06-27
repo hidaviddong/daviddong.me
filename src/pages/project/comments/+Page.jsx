@@ -16,6 +16,7 @@ export default function Page() {
 					className="bg-gray-50 border rounded-md my-0"
 				/>
 				<a
+					aria-label="David Dong's GitHub project comments"
 					className="no-underline my-0 mt-4 text-sm font-medium hover:underline hover:cursor-pointer"
 					href="https://github.com/DongHY1/comments"
 				>

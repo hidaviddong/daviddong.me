@@ -1,3 +1,4 @@
+import '../index.css'
 export { Head }
 function Head() {
     const URL = "https://daviddong.me"

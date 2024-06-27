@@ -1,5 +1,4 @@
 import { useData } from "vike-react/useData";
-
 export { Head }
 function Head() {
     const { project } = useData()

@@ -54,6 +54,18 @@ export default function Page() {
 				</p>
 			</div>
 
+			<div className="flex flex-col justify-center items-center mt-4">
+				<Image
+					src="/images/pagespeed.webp"
+					alt="pagespeed"
+					className="bg-gray-50 border rounded-md my-0 w-full"
+				/>
+				<p className="my-0 mt-4 text-sm font-medium">PageSpeed</p>
+				<p className="my-0 text-zinc-500 text-sm">
+					Full marks on all metrics in PageSpeed.
+				</p>
+			</div>
+
 		</div>
 
 	);

@@ -1,4 +1,3 @@
-import { BentoCard, BentoGrid } from "@/components/ui/bento-grid";
 import { Dock, DockIcon } from "@/components/ui/dock";
 import {
 	EmailIcon,
@@ -7,20 +6,20 @@ import {
 	ResumeIcon,
 	WhatsAppIcon,
 } from "@/components/ui/icons";
-import { Image } from "@/components/ui/image";
 import { Tag } from "@/components/ui/tag";
 import { SideProjects, Works } from "@/config/project";
 const ProjectLists = ({ title, items }) => (
-	<section>
+	<>
 		<h2>{title}</h2>
-		<BentoGrid className="md:grid-rows-3">
+		<section className="w-full">
 			{items.map((feature) => (
-				<BentoCard key={feature.name} {...feature} >
-					<Image src={feature.background} alt={feature.name} />
-				</BentoCard>
+				<a href={feature.href} key={feature.name} className="no-underline block hover:bg-zinc-100 ease-in-out duration-300 hover:rounded-md p-4 hover:cursor-pointer">
+					<div className="text-neutral-500">{feature.name}</div>
+					<div className="text-zinc-400 text-sm">{feature.time} · {feature.description}</div>
+				</a>
 			))}
-		</BentoGrid>
-	</section>
+		</section>
+	</>
 );
 
 export default function Page() {
@@ -28,7 +27,7 @@ export default function Page() {
 		<article className="prose prose-p:text-neutral-500 p-12">
 			<h1>Hi, I'm Haoyu</h1>
 			{/* about me */}
-			<section>
+			<section className="p-4">
 				<div className="text-neutral-500">
 					You can call me David. I'm a software engineer and previously worked at
 					<Tag text="Tencent Music" tooltip="Intern Software Developer from May 2022 to Oct 2022" />
@@ -100,3 +99,4 @@ export default function Page() {
 		</article>
 	);
 }
+

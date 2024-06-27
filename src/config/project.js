@@ -2,18 +2,21 @@ const Works = [
 	{
 		name: "AI Diagnosis Assistant",
 		description: "Medical field chat application.",
+		time: "2023-2024",
 		href: "/project/ai",
-		background: "/images/ai.webp",
+		background: "/images/ai_small.webp",
 	},
 	{
 		name: "Data Visualization",
 		description: "Chart and 3D models.",
+		time: "2023-2024",
 		href: "/project/data-visualization",
 		background: "/images/data-visualization.webp",
 	},
 	{
 		name: "Hybrid Mobile App",
 		description: "QQ Music livestreaming Room.",
+		time: "2022",
 		href: "/project/tme",
 		background: "/images/tme.webp",
 	},
@@ -23,12 +26,14 @@ const SideProjects = [
 	{
 		name: "daviddong.me",
 		description: "My website.",
+		time: "2024",
 		href: "/project/website",
 		background: "/images/website.webp",
 	},
 	{
 		name: "Comments",
 		description: "Add comments to your website.",
+		time: "2023",
 		href: "/project/comments",
 		background: "/images/comments.webp",
 	},

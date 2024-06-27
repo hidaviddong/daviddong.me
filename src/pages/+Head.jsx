@@ -1,5 +1,6 @@
 import "./index.css";
-export default function HeaderDefault() {
+export { Head }
+function Head() {
     return (
         <>
             <meta charSet="UTF-8" />

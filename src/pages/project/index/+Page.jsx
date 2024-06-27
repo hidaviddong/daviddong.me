@@ -9,7 +9,7 @@ const ProjectLists = ({ title, items }) => (
 				<li key={name}>
 					<a
 						variant="link"
-						className="no-underline text-md text-neutral-500 hover:text-neutral-800 text-primary underline-offset-4 hover:underline"
+						className="no-underline text-md text-zinc-500 hover:text-zinc-800 text-primary underline-offset-4 hover:underline"
 						href={href}
 					>
 						{name}

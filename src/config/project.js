@@ -4,7 +4,8 @@ const Works = [
 		description: "Medical field chat application.",
 		time: "2023-2024",
 		href: "/project/ai",
-		background: "/images/ai_small.webp",
+		background: "/images/ai.webp",
+		keywords: ["ai", "large language model", "gpt", "medical", "chatbot"]
 	},
 	{
 		name: "Data Visualization",
@@ -12,6 +13,7 @@ const Works = [
 		time: "2023-2024",
 		href: "/project/data-visualization",
 		background: "/images/data-visualization.webp",
+		keywords: ["data visualization", "ECharts", "Blender", "Three.js"]
 	},
 	{
 		name: "Hybrid Mobile App",
@@ -19,6 +21,7 @@ const Works = [
 		time: "2022",
 		href: "/project/tme",
 		background: "/images/tme.webp",
+		keywords: ["mobile app", "hybrid app", "React", "TypeScript"]
 	},
 ];
 
@@ -29,6 +32,7 @@ const SideProjects = [
 		time: "2024",
 		href: "/project/website",
 		background: "/images/website.webp",
+		keywords: ["personal website", "portfolio", "web development", "software engineer"]
 	},
 	{
 		name: "Comments",
@@ -36,9 +40,9 @@ const SideProjects = [
 		time: "2023",
 		href: "/project/comments",
 		background: "/images/comments.webp",
+		keywords: ["comments", "open source", "React", "TypeScript","Node.js"]
 	},
 ];
-
 const SONG_BASEURL = "https://img1.doubanio.com/lpic/";
 const Songs = [
 	{ title: "Blue Moon", artist: "David Tao", url: "s4208287" },

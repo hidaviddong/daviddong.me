@@ -6,16 +6,15 @@ import {
 	ResumeIcon,
 	WhatsAppIcon,
 } from "@/components/ui/icons";
-import { Tag } from "@/components/ui/tag";
 import { SideProjects, Works } from "@/config/project";
-const ProjectLists = ({ title, items }) => (
+const ProjectLists = ({ title, projects }) => (
 	<>
 		<h2>{title}</h2>
 		<section className="w-full">
-			{items.map((feature) => (
-				<a href={feature.href} key={feature.name} className="no-underline block hover:bg-zinc-100 ease-in-out duration-300 hover:rounded-md p-4 hover:cursor-pointer">
-					<div className="text-neutral-500">{feature.name}</div>
-					<div className="text-zinc-400 text-sm">{feature.time} · {feature.description}</div>
+			{projects.map((project) => (
+				<a href={project.href} key={project.name} className="no-underline block hover:bg-zinc-100 ease-in-out duration-300 hover:rounded-md p-4 hover:cursor-pointer">
+					<div className="text-zinc-500">{project.name}</div>
+					<div className="text-zinc-400 text-sm">{project.time} · {project.description}</div>
 				</a>
 			))}
 		</section>
@@ -24,42 +23,38 @@ const ProjectLists = ({ title, items }) => (
 
 export default function Page() {
 	return (
-		<article className="prose prose-p:text-neutral-500 p-12">
+		<article className="prose p-12">
 			<h1>Hi, I'm Haoyu</h1>
 			{/* about me */}
-			<section className="p-4">
-				<div className="text-neutral-500">
-					You can call me David. I'm a software engineer and previously worked at
-					<Tag text="Tencent Music" tooltip="Intern Software Developer from May 2022 to Oct 2022" />
-					and
-					<Tag
-						text="Peking University Institute"
-						tooltip="Junior Software Developer from Jul 2023 to Jul 2024"
-					/>
-					.
-				</div>
-				<br />
-				<div className="text-neutral-500">
-					In my free time, I usually play guitar and watch movies. Here is a list of my favorites
-					<a className="no-underline px-2 mx-1 text-sm hover:cursor-pointer" data-umami-event="List Button" href="/list" >
-						📃
-					</a>
-					.
-				</div>
+			<section>
+
+				<p>
+					<span>You can call me David. I'm a software engineer and previously worked at</span>
+					<a href="https://www.tencentmusic.com/en-us/" className="text-zinc-500 mx-1 decoration-zinc-300 underline-offset-2  hover:decoration-zinc-400">Tencent Music</a>
+					<span>and</span>
+					<a href="https://icode.pku.edu.cn/" className="text-zinc-500 mx-1 decoration-zinc-300 underline-offset-2  hover:decoration-zinc-400">Peking University Institute</a>
+					<span>.</span>
+				</p>
+
+				<p>
+					<span>In my free time, I usually play guitar and watch movies. Here is a</span>
+					<a href="/list" className="text-zinc-500 mx-1 decoration-zinc-300 underline-offset-2 decoration-wavy   hover:decoration-zinc-400">list</a>
+					<span>.</span>
+				</p>
+
 				<p>
 					I recently moved to Hong Kong and am actively seeking a software development position.
 					Feel free to reach out to me!
 				</p>
+
 				<p>
-					Email me at &nbsp;
-					<span className="font-mono text-neutral-800 hover:underline hover:underline-offset-2">
-						hi@daviddong.me
-					</span>
-					.
+					<span>Email me at</span>
+					<a href="mailto:hi@daviddong.me" className="text-zinc-500 mx-1 decoration-zinc-300 underline-offset-2  hover:decoration-zinc-400">hi@daviddong.me</a>
+					<span>.</span>
 				</p>
 			</section>
-			<ProjectLists title="Works" items={Works} />
-			<ProjectLists title="Side Projects" items={SideProjects} />
+			<ProjectLists title="Works" projects={Works} />
+			<ProjectLists title="Side Projects" projects={SideProjects} />
 
 			<div className="w-full justify-center flex">
 				<Dock className="fixed bottom-4 bg-white">

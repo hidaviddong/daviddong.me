@@ -1,7 +1,7 @@
-
 import { codeToHtml } from 'shiki'
+import { SideProjects } from "@/config/project"
 export async function data(pageContext) {
-    const code = `export const useImageMeta = (src) => {
+  const code = `export const useImageMeta = (src) => {
         const [dimensions, setDimensions] = useState({
           width: undefined,
           height: undefined,
@@ -32,11 +32,13 @@ export async function data(pageContext) {
         }, [src]);
         return dimensions;
       };`
-    const generatedHtml = await codeToHtml(code, {
-        lang: 'javascript',
-        theme: 'vitesse-light'
-    });
-    return {
-        generatedHtml
-    }
+  const generatedHtml = await codeToHtml(code, {
+    lang: 'javascript',
+    theme: 'vitesse-light'
+  });
+  const project = SideProjects.find((project) => project.href === pageContext.urlParsed.pathname)
+  return {
+    generatedHtml,
+    project
+  }
 }

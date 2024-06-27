@@ -2,12 +2,12 @@ import Code from "@/components/ui/code";
 import { Image } from "@/components/ui/image";
 import { useData } from 'vike-react/useData'
 export default function Page() {
-	const { generatedHtml } = useData()
+	const { generatedHtml, project } = useData()
 	return (
 		<div className="flex flex-col w-full">
 			<div className="font-medium text-base flex flex-col gap-1">
-				<p className="my-0">daviddong.me</p>
-				<p className="my-0">2024 · Maintainer</p>
+				<p className="my-0">{project.name}</p>
+				<p className="my-0 text-zinc-400 text-sm">{project.time} · {project.description}</p>
 			</div>
 			<p>My Personal Website.</p>
 			<div className="flex flex-col justify-center items-center">
@@ -33,7 +33,7 @@ export default function Page() {
 					className="bg-gray-50 border rounded-md my-0"
 				/>
 				<p className="my-0 mt-4 text-sm font-medium">Puppeteer</p>
-				<p className="my-0 text-neutral-400 text-sm">
+				<p className="my-0 text-zinc-400 text-sm">
 					Use Puppeteer and GitHub Actions to automatically scrape the latest resume.
 				</p>
 			</div>
@@ -48,7 +48,7 @@ export default function Page() {
 					<Code html={generatedHtml} />
 				</div>
 				<p className="my-0 mt-4 text-sm font-medium">Image Optimization</p>
-				<p className="my-0 text-neutral-400 text-sm">
+				<p className="my-0 text-zinc-400 text-sm">
 					Size optimization, automatically determine image width and height .
 				</p>
 			</div>

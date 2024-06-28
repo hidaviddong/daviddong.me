@@ -43,7 +43,7 @@ export default function Page() {
 				</a>
 				<a
 					data-umami-event="WhatsApp Button"
-					href="https://wa.link/bbs3i"
+					href="https://api.whatsapp.com/send?phone=85246720879&text=Hello%2C%20I%27m%20Haoyu%2C%20I%27m%20looking%20for%20a%20software%20development%20job%20in%20Hong%20Kong."
 					className="text-zinc-500 decoration-zinc-300 underline-offset-2 hover:decoration-zinc-400"
 				>
 					WhatsApp

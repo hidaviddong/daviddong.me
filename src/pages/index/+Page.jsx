@@ -1,12 +1,5 @@
-import { Dock, DockIcon } from "@/components/ui/dock";
+
 import { prefetch } from 'vike/client/router'
-import {
-	EmailIcon,
-	GithubIcon,
-	LinkedInIcon,
-	ResumeIcon,
-	WhatsAppIcon,
-} from "@/components/ui/icons";
 import { SideProjects, Works } from "@/config/project";
 const ProjectLists = ({ title, projects }) => (
 	<>
@@ -26,7 +19,43 @@ export default function Page() {
 	return (
 		<article className="prose p-12">
 			<h1>Hi, I'm Haoyu</h1>
-			{/* about me */}
+			<nav className='flex space-x-4'>
+				<a
+					data-umami-event="GitHub Button"
+					href="https://github.com/DongHY1"
+					className="text-zinc-500 decoration-zinc-300 underline-offset-2 hover:decoration-zinc-400"
+				>
+					GitHub
+				</a>
+				<a
+					data-umami-event="Linkedin Button"
+					href="https://www.linkedin.com/in/DongHY1"
+					className="text-zinc-500 decoration-zinc-300 underline-offset-2 hover:decoration-zinc-400"
+				>
+					LinkedIn
+				</a>
+				<a
+					data-umami-event="Email Button"
+					href="mailto:hi@daviddong.me"
+					className="text-zinc-500 decoration-zinc-300 underline-offset-2 hover:decoration-zinc-400"
+				>
+					Email
+				</a>
+				<a
+					data-umami-event="WhatsApp Button"
+					href="https://wa.link/bbs3i"
+					className="text-zinc-500 decoration-zinc-300 underline-offset-2 hover:decoration-zinc-400"
+				>
+					WhatsApp
+				</a>
+				<a
+					data-umami-event="Resume Button"
+					href="/cv.pdf"
+					className="text-zinc-500 decoration-zinc-300 underline-offset-2 hover:decoration-zinc-400"
+				>
+					Resume
+				</a>
+			</nav>
 			<section>
 
 				<p>
@@ -56,47 +85,6 @@ export default function Page() {
 			</section>
 			<ProjectLists title="Works" projects={Works} />
 			<ProjectLists title="Side Projects" projects={SideProjects} />
-
-			<div className="w-full justify-center flex">
-				<Dock className="fixed bottom-4 bg-white">
-					<DockIcon
-						aria-label="David Dong's GitHub"
-						data-umami-event="GitHub Button"
-						href="https://github.com/DongHY1"
-					>
-						<GithubIcon className="h-6 w-6" />
-					</DockIcon>
-					<DockIcon
-						aria-label="David Dong's Linkedin"
-						data-umami-event="Linkedin Button"
-						href="https://www.linkedin.com/in/DongHY1"
-					>
-						<LinkedInIcon className="h-6 w-6" />
-					</DockIcon>
-
-					<DockIcon
-						aria-label="David Dong's email"
-						data-umami-event="Email Button"
-						href="mailto:hi@daviddong.me"
-					>
-						<EmailIcon className="h-6 w-6" />
-					</DockIcon>
-					<DockIcon
-						aria-label="David Dong's WhatsApp"
-						data-umami-event="WhatsApp Button"
-						href="https://wa.link/bbs3i"
-					>
-						<WhatsAppIcon className="h-6 w-6" />
-					</DockIcon>
-					<DockIcon
-						aria-label="David Dong's cv"
-						data-umami-event="Resume Button"
-						href="/cv.pdf"
-					>
-						<ResumeIcon className="h-6 w-6" />
-					</DockIcon>
-				</Dock>
-			</div>
 		</article>
 	);
 }

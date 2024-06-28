@@ -19,7 +19,7 @@ export default function Page() {
 	return (
 		<article className="prose p-12">
 			<h1>Hi, I'm Haoyu</h1>
-			<nav className='flex space-x-4'>
+			<nav className='flex space-x-4 text-sm'>
 				<a
 					data-umami-event="GitHub Button"
 					href="https://github.com/DongHY1"
@@ -33,13 +33,6 @@ export default function Page() {
 					className="text-zinc-500 decoration-zinc-300 underline-offset-2 hover:decoration-zinc-400"
 				>
 					LinkedIn
-				</a>
-				<a
-					data-umami-event="Email Button"
-					href="mailto:hi@daviddong.me"
-					className="text-zinc-500 decoration-zinc-300 underline-offset-2 hover:decoration-zinc-400"
-				>
-					Email
 				</a>
 				<a
 					data-umami-event="WhatsApp Button"

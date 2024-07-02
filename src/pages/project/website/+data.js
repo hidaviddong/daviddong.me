@@ -1,5 +1,5 @@
 import { codeToHtml } from 'shiki'
-import { SideProjects } from "@/config/project"
+import { OpenSourceProjects } from "@/config/project"
 export async function data(pageContext) {
   const code = `export const useImageMeta = (src) => {
         const [dimensions, setDimensions] = useState({
@@ -36,7 +36,7 @@ export async function data(pageContext) {
     lang: 'javascript',
     theme: 'vitesse-light'
   });
-  const project = SideProjects.find((project) => project.href === pageContext.urlParsed.pathname)
+  const project = OpenSourceProjects.find((project) => project.href === pageContext.urlParsed.pathname)
   return {
     generatedHtml,
     project

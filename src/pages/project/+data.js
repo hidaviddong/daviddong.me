@@ -1,6 +1,6 @@
-import { Works, SideProjects } from "@/config/project"
+import { Works, OpenSourceProjects } from "@/config/project"
 export async function data(pageContext) {
-    const allProject = [...Works, ...SideProjects]
+    const allProject = [...Works, ...OpenSourceProjects]
     const project = allProject.find((project) => project.href === pageContext.urlParsed.pathname)
     return {
         project

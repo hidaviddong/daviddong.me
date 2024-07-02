@@ -1,4 +1,4 @@
-import { SideProjects, Works } from "@/config/project";
+import { OpenSourceProjects, Works } from "@/config/project";
 
 
 const ProjectLists = ({ title, items }) => (
@@ -25,7 +25,7 @@ export default function Page() {
 	return (
 		<>
 			<ProjectLists title="Works" items={Works} />
-			<ProjectLists title="Side Projects" items={SideProjects} />
+			<ProjectLists title="Open Source Projects" items={OpenSourceProjects} />
 		</>
 	);
 }

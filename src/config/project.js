@@ -25,7 +25,7 @@ const Works = [
 	},
 ];
 
-const SideProjects = [
+const OpenSourceProjects = [
 	{
 		name: "daviddong.me",
 		description: "My website.",
@@ -40,7 +40,7 @@ const SideProjects = [
 		time: "2023",
 		href: "/project/comments",
 		background: "/images/comments.webp",
-		keywords: ["comments", "open source", "React", "TypeScript","Node.js"]
+		keywords: ["comments", "open source", "React", "TypeScript", "Node.js"]
 	},
 ];
 const SONG_BASEURL = "https://img1.doubanio.com/lpic/";
@@ -189,7 +189,7 @@ const Music = [
 ];
 export {
 	Works,
-	SideProjects,
+	OpenSourceProjects,
 	SONG_BASEURL,
 	Songs,
 	Movies,

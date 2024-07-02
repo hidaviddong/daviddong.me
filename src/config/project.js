@@ -35,6 +35,22 @@ const OpenSourceProjects = [
 		keywords: ["personal website", "portfolio", "web development", "software engineer"]
 	},
 	{
+		name: "Raytracing",
+		description: "Raytracing algorithm in JavaScript.",
+		time: "2024",
+		href: "/project/raytracing",
+		background: "/images/raytracing.webp",
+		keywords: ["raytracing"]
+	},
+	{
+		name: "Mini React",
+		description: "A Minimal implementation of React.js and ReactDOM.",
+		time: "2024",
+		href: "/project/react",
+		background: "/images/react.webp",
+		keywords: ["react", "react-dom", "hooks"]
+	},
+	{
 		name: "Comments",
 		description: "Add comments to your website.",
 		time: "2023",

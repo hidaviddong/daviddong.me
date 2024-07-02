@@ -77,7 +77,7 @@ export default function Page() {
 				</p>
 			</section>
 			<ProjectLists title="Works" projects={Works} />
-			<ProjectLists title="Side Projects" projects={OpenSourceProjects} />
+			<ProjectLists title="Open Source Projects" projects={OpenSourceProjects} />
 		</article>
 	);
 }

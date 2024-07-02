@@ -7,7 +7,8 @@ export default function Page() {
                 <p className="my-0 text-zinc-700">{project.name}</p>
                 <p className="my-0 text-zinc-500 text-sm">{project.time} · {project.description}</p>
             </div>
-            <div className="flex flex-col space-y-12 mt-4">
+            <p>Using the <span className="font-mono">requestIdleCallback</span> API, but Safari doesn't support it.</p>
+            <div className="flex flex-col space-y-12">
                 <div className="flex flex-col justify-center items-center">
                     <iframe
                         scrolling="no"

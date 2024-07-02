@@ -1,11 +1,11 @@
 const Works = [
 	{
-		name: "AI Diagnosis Assistant",
+		name: "LLM Chatbot",
 		description: "Medical field chat application.",
 		time: "2023-2024",
 		href: "/project/ai",
 		background: "/images/ai.webp",
-		keywords: ["ai", "large language model", "gpt", "medical", "chatbot"]
+		keywords: ["llm", "large language model", "gpt", "medical", "chatbot"]
 	},
 	{
 		name: "Data Visualization",

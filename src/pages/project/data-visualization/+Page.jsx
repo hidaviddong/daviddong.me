@@ -1,6 +1,7 @@
 import { Separator } from "@/components/ui/separator";
 import { Image } from "@/components/ui/image";
 import { useData } from "vike-react/useData";
+import { ReactCompareSlider, ReactCompareSliderImage } from 'react-compare-slider';
 export default function Page() {
 	const { project } = useData()
 	return (
@@ -25,6 +26,15 @@ export default function Page() {
 					>
 						My Desktop Website
 					</a>
+				</div>
+				<div className="flex flex-col justify-center items-center">
+					<ReactCompareSlider
+						position={50}
+						itemTwo={<ReactCompareSliderImage src="/images/desktop-real-world.webp" alt="Desktop Real World" />}
+						itemOne={<ReactCompareSliderImage src="/images/desktop-model.webp" alt="Desktop Model" />}
+					/>
+					<p className="my-0 mt-4 text-sm font-medium">Diff</p>
+					<p className="my-0 text-zinc-500 text-sm">Model and Real World</p>
 				</div>
 				<div className="flex flex-col justify-center items-center">
 					<Image

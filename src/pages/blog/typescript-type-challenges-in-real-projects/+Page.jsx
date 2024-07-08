@@ -26,10 +26,10 @@ export default function Page() {
                 <p>
                     This project is about spectral analysis. It has many electrodes with different labels, such as electrode A, B, C.
                 </p>
-                <p>It can easily write a TypeScript type to constrain these keys:</p>
+                <p>You can write a TypeScript type to constrain these keys:</p>
                 <Code dangerouslySetInnerHTML={{ __html: html }} />
                 <p>But these electrodes can be combined in pairs. such as electeode A-B, A-C, B-C.</p>
-                <p>You can add more electrode like this below:</p>
+                <p>Let's add more electrode like this below:</p>
                 <Code dangerouslySetInnerHTML={{ __html: html2 }} />
                 <p>However, as the number of keys increase, this type becomes hard to maintain.</p>
 

@@ -66,6 +66,12 @@ const Blog = [
 		description: "Understand how hardware and software worked at a low level.",
 		time: '2024',
 		href: '/blog/nand2tetris',
+	},
+	{
+		name: 'Real world type gymnastic',
+		description: "记录一次在日常开发中碰到的类型体操.",
+		time: '2024',
+		href: '/blog/real-world-type-gymnastic',
 	}
 ]
 const SONG_BASEURL = "https://img1.doubanio.com/lpic/";

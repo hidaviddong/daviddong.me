@@ -52,7 +52,6 @@ export default function Page() {
                     </tr>
                 </tbody>
             </table>
-            {/*  */}
             <p>If we set both A and B to the same variable X, the truth table is equal to the <b>Not</b> truth table.</p>
             <table>
                 <thead>

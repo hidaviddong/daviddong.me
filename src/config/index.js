@@ -59,6 +59,15 @@ const OpenSourceProjects = [
 		keywords: ["comments", "open source", "React", "TypeScript", "Node.js"]
 	},
 ];
+
+const Blog = [
+	{
+		name: 'Reading: The Elements of Computing Systems',
+		description: "Understand how hardware and software worked at a low level.",
+		time: '2024',
+		href: '/blog/nand2tetris',
+	}
+]
 const SONG_BASEURL = "https://img1.doubanio.com/lpic/";
 const Songs = [
 	{ title: "Blue Moon", artist: "David Tao", url: "s4208287" },
@@ -202,14 +211,15 @@ const Music = [
 		imageUrl: "love-under-the-moon",
 		url: "BV1CW411n7Jm",
 	},
-];
+]
 export {
 	Works,
 	OpenSourceProjects,
+	Blog,
 	SONG_BASEURL,
 	Songs,
 	Movies,
 	MOVIE_BASEURL,
 	Music,
-	MUSICVIDEO_BASEURL,
+	MUSICVIDEO_BASEURL
 };

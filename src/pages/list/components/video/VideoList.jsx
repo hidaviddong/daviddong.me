@@ -1,5 +1,5 @@
 import { MusicPlayIcon } from "@/components/ui/icons";
-import { Music } from "@/config/project";
+import { Music } from "@/config";
 
 function VideoItem({ imageUrl, url, name, author }) {
 	const backgroundImageUrl = `/images/${imageUrl}.webp`;

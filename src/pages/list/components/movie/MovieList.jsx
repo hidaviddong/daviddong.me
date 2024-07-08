@@ -1,4 +1,4 @@
-import { MOVIE_BASEURL, Movies } from "@/config/project";
+import { MOVIE_BASEURL, Movies } from "@/config";
 
 function MovieItem({ title, year, imageUrl }) {
 	return (

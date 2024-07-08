@@ -1,5 +1,5 @@
 import { MusicPlayIcon } from "@/components/ui/icons";
-import { SONG_BASEURL, Songs } from "@/config/project";
+import { SONG_BASEURL, Songs } from "@/config";
 function SongItem({ song }) {
 	return (
 		<div className="group w-full flex hover:bg-zinc-100 hover:rounded-md p-2">

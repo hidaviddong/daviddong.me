@@ -1,10 +1,10 @@
 const Works = [
 	{
-		name: "LLM Chatbot",
-		description: "Medical field chat application.",
+		name: "Chatbot",
+		description: "Chat application in medical field.",
 		time: "2023-2024",
-		href: "/project/ai",
-		background: "/images/ai.webp",
+		href: "/project/chatbot",
+		background: "/images/chatbot.webp",
 		keywords: ["llm", "large language model", "gpt", "medical", "chatbot"]
 	},
 	{

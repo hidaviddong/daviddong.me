@@ -68,10 +68,10 @@ const Blog = [
 		href: '/blog/nand2tetris',
 	},
 	{
-		name: 'Real world type gymnastic',
-		description: "记录一次在日常开发中碰到的类型体操.",
+		name: 'TypeScript Type Challenges in Real Projects',
+		description: "Managing complex key combinations in TypeScript.",
 		time: '2024',
-		href: '/blog/real-world-type-gymnastic',
+		href: '/blog/typescript-type-challenges-in-real-projects',
 	}
 ]
 const SONG_BASEURL = "https://img1.doubanio.com/lpic/";

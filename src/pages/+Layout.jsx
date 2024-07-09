@@ -10,7 +10,11 @@ function Layout({ children }) {
 			<main className="h-full w-full flex justify-center items-center flex-col">{children}</main>
 			<footer className="w-full text-center text-sm space-y-4 text-zinc-700 relative bottom-0">
 				{shouldShowCD && <a href="/" className="font-mono underline underline-offset-1">cd /</a>}
-				<p>© {year} David Dong. All rights reserved.</p>
+				<p>© {year} David Dong. All rights reserved.
+					<a href="https://cloud.umami.is/share/057q09EfzZ3Dm6sQ/daviddong.me">
+						📈
+					</a>
+				</p>
 			</footer>
 		</div>
 	);

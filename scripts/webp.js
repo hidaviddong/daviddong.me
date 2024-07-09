@@ -1,7 +1,7 @@
 import sharp from "sharp";
 import { readdir, unlink, stat } from "node:fs/promises";
-import { extname, join, resolve } from 'path'
-import { redBright, greenBright, cyanBright, yellowBright, red } from 'ansis';
+import { extname, resolve } from 'path'
+import { redBright, greenBright, cyanBright, yellowBright } from 'ansis';
 
 const imagesDir = './public/images';
 
@@ -10,7 +10,7 @@ async function getFileSize(filePath) {
         const stats = await stat(filePath);
         return stats.size;
     } catch (error) {
-        console.error(red(`Error getting size of ${filePath}: ${error}`))
+        console.error(redBright(`Error getting size of ${filePath}: ${error}`))
         return -1;
     }
 }

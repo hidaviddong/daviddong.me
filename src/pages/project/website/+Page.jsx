@@ -11,7 +11,7 @@ export default function Page() {
 			</div>
 			<p>My Personal Website.</p>
 			<div className="flex flex-col justify-center items-center">
-				<div className="flex max-w-full w-3/4">
+				<div className="flex max-w-full">
 					<Image
 						src="/images/daviddong-mobile.webp"
 						alt="daviddong-mobile"

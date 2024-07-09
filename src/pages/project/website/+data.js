@@ -1,5 +1,5 @@
 import { codeToHtml } from 'shiki'
-import { OpenSourceProjects } from "@/config/project"
+import { OpenSourceProjects } from "@/config"
 export async function data(pageContext) {
   const code = `export const useImageMeta = (src) => {
         const [dimensions, setDimensions] = useState({

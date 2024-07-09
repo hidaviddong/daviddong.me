@@ -46,7 +46,7 @@ export default function Page() {
 						alt="image-optimization"
 						className="bg-gray-50 border rounded-md my-0 w-full"
 					/>
-					<Code html={generatedHtml} />
+					<Code dangerouslySetInnerHTML={{ __html: generatedHtml }} />
 				</div>
 				<p className="my-0 mt-4 text-sm font-medium">Image Optimization</p>
 				<p className="my-0 text-zinc-500 text-sm">

@@ -1,7 +1,7 @@
 
 import { prefetch } from 'vike/client/router'
-import { OpenSourceProjects, Works } from "@/config/project";
-const ProjectLists = ({ title, projects }) => (
+import { Blog, OpenSourceProjects, Works } from "@/config";
+const Lists = ({ title, projects }) => (
 	<>
 		<h2>{title}</h2>
 		<section className="w-full">
@@ -76,8 +76,9 @@ export default function Page() {
 					<span>.</span>
 				</p>
 			</section>
-			<ProjectLists title="Works" projects={Works} />
-			<ProjectLists title="Open Source Projects" projects={OpenSourceProjects} />
+			<Lists title="Works" projects={Works} />
+			<Lists title="Open Source Projects" projects={OpenSourceProjects} />
+			<Lists title="Blog" projects={Blog} />
 		</article>
 	);
 }

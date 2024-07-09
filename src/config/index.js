@@ -1,10 +1,10 @@
 const Works = [
 	{
-		name: "LLM Chatbot",
-		description: "Medical field chat application.",
+		name: "Chatbot",
+		description: "Chat application in medical field.",
 		time: "2023-2024",
-		href: "/project/ai",
-		background: "/images/ai.webp",
+		href: "/project/chatbot",
+		background: "/images/chatbot.webp",
 		keywords: ["llm", "large language model", "gpt", "medical", "chatbot"]
 	},
 	{
@@ -59,6 +59,21 @@ const OpenSourceProjects = [
 		keywords: ["comments", "open source", "React", "TypeScript", "Node.js"]
 	},
 ];
+
+const Blog = [
+	{
+		name: 'Reading: The Elements of Computing Systems',
+		description: "Understand how hardware and software worked at a low level.",
+		time: '2024',
+		href: '/blog/nand2tetris',
+	},
+	{
+		name: 'TypeScript Type Challenges in Real Projects',
+		description: "Managing complex key combinations in TypeScript.",
+		time: '2024',
+		href: '/blog/typescript-type-challenges-in-real-projects',
+	}
+]
 const SONG_BASEURL = "https://img1.doubanio.com/lpic/";
 const Songs = [
 	{ title: "Blue Moon", artist: "David Tao", url: "s4208287" },
@@ -202,14 +217,15 @@ const Music = [
 		imageUrl: "love-under-the-moon",
 		url: "BV1CW411n7Jm",
 	},
-];
+]
 export {
 	Works,
 	OpenSourceProjects,
+	Blog,
 	SONG_BASEURL,
 	Songs,
 	Movies,
 	MOVIE_BASEURL,
 	Music,
-	MUSICVIDEO_BASEURL,
+	MUSICVIDEO_BASEURL
 };

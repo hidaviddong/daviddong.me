@@ -1,7 +1,7 @@
-import { OpenSourceProjects, Works } from "@/config/project";
+import { OpenSourceProjects, Works } from "@/config";
 
 
-const ProjectLists = ({ title, items }) => (
+const Lists = ({ title, items }) => (
 	<section>
 		<h3>{title}</h3>
 		<ul>
@@ -24,8 +24,8 @@ const ProjectLists = ({ title, items }) => (
 export default function Page() {
 	return (
 		<>
-			<ProjectLists title="Works" items={Works} />
-			<ProjectLists title="Open Source Projects" items={OpenSourceProjects} />
+			<Lists title="Works" items={Works} />
+			<Lists title="Open Source Projects" items={OpenSourceProjects} />
 		</>
 	);
 }

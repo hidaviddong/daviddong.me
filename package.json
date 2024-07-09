@@ -12,6 +12,7 @@
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.1",
+    "@shikijs/twoslash": "^1.10.3",
     "@tailwindcss/typography": "^0.5.13",
     "@types/react": "^18.3.3",
     "@types/react-dom": "^18.3.0",

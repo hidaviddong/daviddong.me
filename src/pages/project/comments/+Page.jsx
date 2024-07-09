@@ -8,7 +8,6 @@ export default function Page() {
 				<p className="my-0 text-zinc-700">{project.name}</p>
 				<p className="my-0 text-zinc-500 text-sm">{project.time} · {project.description}</p>
 			</div>
-			<p>Add comments to your website.</p>
 			<div className="flex flex-col justify-center items-center">
 				<Image
 					src="/images/comments.gif"

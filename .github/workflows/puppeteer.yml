@@ -22,15 +22,19 @@ jobs:
       run: PUPPETEER_PRODUCT=chrome deno run -A https://deno.land/x/puppeteer@16.2.0/install.ts
 
     - name: Remove old cv.pdf
-      run: rm -f public/cv.pdf
+      run: if [ -f public/cv.pdf ]; then rm -f public/cv.pdf; fi
 
     - name: Run Puppeteer script
       run: deno run -A scripts/puppeteer.js
-
-    - name: Commit
-      uses: EndBug/add-and-commit@v5
-      with:
-        message: "update: new cv.pdf file"
-        add: "public/cv.pdf"
+      
+    - name: Commit and push changes
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      run: |
+        git config --global user.name 'github-actions[bot]'
+        git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+        git fetch origin master
+        git reset --soft FETCH_HEAD
+        git add public/cv.pdf
+        git commit -m "chore: update cv.pdf"
+        git push origin master

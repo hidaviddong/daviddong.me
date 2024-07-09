@@ -66,12 +66,16 @@ const Blog = [
 		description: "Understand how hardware and software worked at a low level.",
 		time: '2024',
 		href: '/blog/nand2tetris',
+		background: "/images/og.webp",
+		keywords: ["hardware", "software"]
 	},
 	{
 		name: 'TypeScript Type Challenges in Real Projects',
 		description: "Managing complex key combinations in TypeScript.",
 		time: '2024',
 		href: '/blog/typescript-type-challenges-in-real-projects',
+		background: "/images/og.webp",
+		keywords: ["TypeScript", "Type Challenge"]
 	}
 ]
 const SONG_BASEURL = "https://img1.doubanio.com/lpic/";

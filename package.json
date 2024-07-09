@@ -8,7 +8,8 @@
     "build": "vite build",
     "preview": "vite preview",
     "prepare": "husky",
-    "webp": "bun run ./scripts/webp.js"
+    "webp": "bun run ./scripts/webp.js",
+    "og": "node ./scripts/og.js && bun run webp"
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.1",
@@ -30,6 +31,7 @@
     "@radix-ui/react-separator": "^1.0.3",
     "@radix-ui/react-slot": "^1.0.2",
     "@radix-ui/react-tabs": "^1.1.0",
+    "@resvg/resvg-js": "^2.6.2",
     "ansis": "^3.2.0",
     "class-variance-authority": "^0.7.0",
     "clsx": "^2.1.1",
@@ -39,6 +41,8 @@
     "react": "^18.3.1",
     "react-compare-slider": "^3.1.0",
     "react-dom": "^18.3.1",
+    "satori": "^0.10.14",
+    "satori-html": "^0.3.2",
     "sharp": "^0.33.4",
     "tailwind-merge": "^2.3.0",
     "tailwindcss-animate": "^1.0.7",

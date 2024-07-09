@@ -1,7 +1,8 @@
 import sharp from "sharp";
 import { readdir, unlink, stat } from "node:fs/promises";
-import { extname, join } from 'path'
-import { redBright, greenBright, cyanBright, yellowBright } from 'ansis';
+import { extname, join, resolve } from 'path'
+import { redBright, greenBright, cyanBright, yellowBright, red } from 'ansis';
+
 const imagesDir = './public/images';
 
 async function getFileSize(filePath) {
@@ -13,8 +14,6 @@ async function getFileSize(filePath) {
         return -1;
     }
 }
-
-
 
 async function convertToWebp(inputFile, outputFile) {
     try {
@@ -37,24 +36,29 @@ async function deleteOriginalFile(filePath) {
     }
 }
 
-
-async function processImages() {
+async function processImagesInDirectory(directory) {
     try {
-        const files = await readdir(imagesDir);
+        const files = await readdir(directory, { withFileTypes: true });
         const supportedFormats = ['.jpg', '.jpeg', '.png'];
 
         await Promise.all(files.map(async (file) => {
-            const fileExtension = extname(file).toLowerCase();
-            if (supportedFormats.includes(fileExtension)) {
-                const inputFilePath = join(imagesDir, file);
-                const outputFilePath = inputFilePath.replace(/\.(jpg|jpeg|png)$/i, '.webp');
+            const fullPath = resolve(directory, file.name);
+            if (file.isDirectory()) {
+                await processImagesInDirectory(fullPath);
+            } else if (file.isFile() && supportedFormats.includes(extname(file.name).toLowerCase())) {
+                const outputFilePath = fullPath.replace(/\.(jpg|jpeg|png)$/i, '.webp');
 
-                await convertToWebp(inputFilePath, outputFilePath);
-                await deleteOriginalFile(inputFilePath)
+                await convertToWebp(fullPath, outputFilePath);
+                await deleteOriginalFile(fullPath);
             }
         }));
     } catch (error) {
-        console.error(redBright(`❎ Error processing images:${error}`));
+        console.error(redBright(`❎ Error processing images in directory ${directory}: ${error}`));
     }
 }
-processImages()
+
+async function processImages() {
+    await processImagesInDirectory(imagesDir);
+}
+
+processImages();

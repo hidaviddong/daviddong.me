@@ -66,7 +66,7 @@ const Blog = [
 		description: "Understand how hardware and software worked at a low level.",
 		time: '2024',
 		href: '/blog/nand2tetris',
-		background: "/images/og.webp",
+		background: "/images/og/nand2tetris.webp",
 		keywords: ["hardware", "software"]
 	},
 	{
@@ -74,7 +74,7 @@ const Blog = [
 		description: "Managing complex key combinations in TypeScript.",
 		time: '2024',
 		href: '/blog/typescript-type-challenges-in-real-projects',
-		background: "/images/og.webp",
+		background: "/images/og/typescript-type-challenges-in-real-projects.webp",
 		keywords: ["TypeScript", "Type Challenge"]
 	}
 ]

@@ -3,6 +3,7 @@ export { Head }
 function Head() {
     const { blog } = useData()
     const URL = "https://daviddong.me"
+    console.log('blog', blog)
     if (blog) {
         return (
             <>

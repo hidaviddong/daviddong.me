@@ -1,8 +1,7 @@
-import Code from "@/components/ui/code";
 import { Image } from "@/components/ui/image";
 import { useData } from 'vike-react/useData'
 export default function Page() {
-	const { generatedHtml, project } = useData()
+	const { project } = useData()
 	return (
 		<div className="flex flex-col w-full">
 			<div className="font-medium text-base flex flex-col gap-1">
@@ -10,7 +9,8 @@ export default function Page() {
 				<p className="my-0 text-zinc-500 text-sm">{project.time} · {project.description}</p>
 			</div>
 			<p>My Personal Website.</p>
-			<div className="flex flex-col justify-center items-center">
+
+			<div className="flex flex-col justify-center items-center my-4">
 				<div className="flex max-w-full">
 					<Image
 						src="/images/daviddong-mobile.webp"
@@ -27,7 +27,8 @@ export default function Page() {
 					daviddong.me
 				</a>
 			</div>
-			<div className="flex flex-col justify-center items-center mt-4">
+
+			<div className="flex flex-col justify-center items-center  my-4">
 				<Image
 					src="/images/puppeteer.webp"
 					alt="puppeteer"
@@ -39,22 +40,36 @@ export default function Page() {
 				</p>
 			</div>
 
-			<div className="flex flex-col justify-center items-center mt-4">
+			<div className="flex flex-col justify-center items-center my-4">
 				<div className="flex flex-col justify-center items-center space-y-4 w-full ">
 					<Image
 						src="/images/image-optimization.webp"
 						alt="image-optimization"
 						className="bg-gray-50 border rounded-md my-0 w-full"
 					/>
-					<Code dangerouslySetInnerHTML={{ __html: generatedHtml }} />
 				</div>
 				<p className="my-0 mt-4 text-sm font-medium">Image Optimization</p>
 				<p className="my-0 text-zinc-500 text-sm">
-					Size optimization, automatically determine image width and height .
+					Image Size optimization.
 				</p>
 			</div>
 
-			<div className="flex flex-col justify-center items-center mt-4">
+			<div className="flex flex-col justify-center items-center  my-4">
+				<div className="flex flex-col justify-center items-center space-y-4 w-full ">
+					<Image
+						src="/images/og/nand2tetris.webp"
+						alt="image-optimization"
+						className="bg-gray-50 border rounded-md my-0 w-full"
+					/>
+				</div>
+				<p className="my-0 mt-4 text-sm font-medium">OG Image</p>
+				<p className="my-0 text-zinc-500 text-sm">
+					Automatically generate OG images for blog posts.
+				</p>
+			</div>
+
+
+			<div className="flex flex-col justify-center items-center  my-4">
 				<Image
 					src="/images/pagespeed.webp"
 					alt="pagespeed"

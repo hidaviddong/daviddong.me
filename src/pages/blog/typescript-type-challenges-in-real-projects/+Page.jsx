@@ -1,4 +1,4 @@
-import './style.css'
+import '@/pages/twoslash.css'
 import Code from "@/components/ui/code"
 import { useData } from "vike-react/useData"
 export default function Page() {

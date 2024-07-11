@@ -67,7 +67,7 @@ const Blog = [
 		time: '2024',
 		href: '/blog/nand2tetris',
 		background: "/images/og/nand2tetris.webp",
-		keywords: ["hardware", "software"]
+		keywords: ["Hardware", "Software", "Computer Science"]
 	},
 	{
 		name: 'TypeScript Type Challenges in Real Projects',
@@ -76,6 +76,22 @@ const Blog = [
 		href: '/blog/typescript-type-challenges-in-real-projects',
 		background: "/images/og/typescript-type-challenges-in-real-projects.webp",
 		keywords: ["TypeScript", "Type Challenge"]
+	},
+	{
+		name: `Why I Don't Use Note-Taking and Task Management Apps`,
+		description: "👋 Notion, Obsidian, Calendar, TodoList...",
+		time: '2024',
+		href: '/blog/why-i-dont-use-note-taking-and-task-management-apps',
+		background: "/images/og/why-i-dont-use-note-taking-and-task-management-apps",
+		keywords: ["App", "Notion", "Obsidian", "Todolist", "Calendar"]
+	},
+	{
+		name: 'Things I Use In 2024',
+		description: "Some software on Mac and Windows, and some hardware.",
+		time: '2024',
+		href: '/blog/things-i-use-in-2024',
+		background: "/images/og/things-i-use-in-2024.webp",
+		keywords: ["Mac", "Windows", "Software", "Computer"]
 	}
 ]
 const SONG_BASEURL = "https://img1.doubanio.com/lpic/";

@@ -8,7 +8,7 @@ export default function Page() {
 				<p className="my-0 text-zinc-700">{project.name}</p>
 				<p className="my-0 text-zinc-500 text-sm">{project.time} · {project.description}</p>
 			</div>
-			<p>My Personal Website.</p>
+			<p>My personal website, build from scratch using Vike SSG and React</p>
 
 			<div className="flex flex-col justify-center items-center my-4">
 				<div className="flex max-w-full">

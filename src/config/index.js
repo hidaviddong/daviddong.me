@@ -79,7 +79,7 @@ const Blog = [
 	},
 	{
 		name: `Why I Don't Use Note-Taking and Task Management Apps`,
-		description: "👋 Notion, Obsidian, Calendar, TodoList...",
+		description: "Bye bye Notion, Obsidian, Calendar, TodoList...",
 		time: '2024',
 		href: '/blog/why-i-dont-use-note-taking-and-task-management-apps',
 		background: "/images/og/why-i-dont-use-note-taking-and-task-management-apps",

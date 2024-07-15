@@ -92,6 +92,14 @@ const Blog = [
 		href: '/blog/things-i-use-in-2024',
 		background: "/images/og/things-i-use-in-2024.webp",
 		keywords: ["Mac", "Windows", "Software", "Computer"]
+	},
+	{
+		name: 'Build a Investment Management App ',
+		description: "My thoughts on investment management.",
+		time: '2024',
+		href: '/blog/build-a-investment-management-app',
+		background: "/images/og/build-a-investment-management-app.webp",
+		keywords: ["investment", "management"]
 	}
 ]
 const SONG_BASEURL = "https://img1.doubanio.com/lpic/";

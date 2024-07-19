@@ -1,7 +1,7 @@
 import { config } from "https://deno.land/x/dotenv/mod.ts";
 import puppeteer from "https://deno.land/x/puppeteer@16.2.0/mod.ts";
 const browser = await puppeteer.launch({
-    headless: false, // 设置为false以便观察浏览器动作，调试时很有用
+    headless: true, // 设置为false以便观察浏览器动作，调试时很有用
     args: ['--disable-web-security']
 });
 

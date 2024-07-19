@@ -20,7 +20,7 @@ await page.goto("https://typst.app/project/rIWFtNvpmsgHgh18iqpk2a");
 
 try {
     // 等待带有aria-label="Quick export PDF"的按钮出现，最多等待10秒钟
-    await page.waitForSelector('button[aria-label="Quick export PDF"]', { timeout: 10000 });
+    await page.waitForSelector('button[aria-label="Quick export PDF"]', { timeout: 20000 });
     console.log('页面加载完毕')
     // 找到并点击带有aria-label="Quick export PDF"的按钮
     const quickExportPDFButton = await page.$('button[aria-label="Quick export PDF"]');

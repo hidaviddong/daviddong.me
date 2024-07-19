@@ -17,7 +17,7 @@ export default function Page() {
 				<a
 					aria-label="David Dong's GitHub project comments"
 					className="no-underline my-0 mt-4 text-sm font-medium hover:underline hover:cursor-pointer"
-					href="https://github.com/DongHY1/comments"
+					href="https://github.com/hidaviddong/comments"
 				>
 					Comments
 				</a>

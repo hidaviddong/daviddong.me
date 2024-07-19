@@ -22,7 +22,7 @@ export default function Page() {
 				<a
 					aria-label="David Dong's GitHub Website"
 					className="no-underline my-0 mt-4 text-sm font-medium hover:underline hover:cursor-pointer"
-					href="https://github.com/DongHY1/daviddong.me"
+					href="https://github.com/hidaviddong/daviddong.me"
 				>
 					daviddong.me
 				</a>

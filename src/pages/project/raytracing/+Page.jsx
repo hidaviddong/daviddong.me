@@ -18,7 +18,7 @@ export default function Page() {
                     <a
                         aria-label="David Dong's GitHub project Mini-react"
                         className="no-underline my-0 mt-4 text-sm font-medium hover:underline hover:cursor-pointer"
-                        href="https://github.com/DongHY1/raytracing-js"
+                        href="https://github.com/hidaviddong/raytracing-js"
                     >
                         Raytracing Website
                     </a>

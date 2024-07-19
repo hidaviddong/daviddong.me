@@ -22,14 +22,14 @@ export default function Page() {
 			<nav className='flex space-x-4 text-sm'>
 				<a
 					data-umami-event="GitHub Button"
-					href="https://github.com/DongHY1"
+					href="https://github.com/hidaviddong"
 					className="text-zinc-500 decoration-zinc-300 underline-offset-2 hover:decoration-zinc-400"
 				>
 					GitHub
 				</a>
 				<a
 					data-umami-event="Linkedin Button"
-					href="https://www.linkedin.com/in/DongHY1"
+					href="https://www.linkedin.com/in/hidaviddong"
 					className="text-zinc-500 decoration-zinc-300 underline-offset-2 hover:decoration-zinc-400"
 				>
 					LinkedIn

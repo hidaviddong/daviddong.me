@@ -33,7 +33,7 @@ try {
     console.log('登录成功')
     await page.waitForTimeout(10000)
     // 等待带有aria-label="Quick export PDF"的按钮出现，最多等待10秒钟
-    await page.waitForSelector('button[aria-label="Quick export PDF"]', { timeout: 5000 });
+    await page.waitForSelector('button[aria-label="Quick export PDF"]', { timeout: 10000 });
     console.log('页面加载完毕')
     // 找到并点击带有aria-label="Quick export PDF"的按钮
     const quickExportPDFButton = await page.$('button[aria-label="Quick export PDF"]');

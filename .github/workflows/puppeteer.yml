@@ -25,6 +25,9 @@ jobs:
       run: if [ -f public/cv.pdf ]; then rm -f public/cv.pdf; fi
 
     - name: Run Puppeteer script
+      env:
+        EMAIL: ${{ secrets.EMAIL }}
+        PASSWORD: ${{ secrets.PASSWORD }}
       run: deno run -A scripts/puppeteer.js
       
     - name: Commit and push changes

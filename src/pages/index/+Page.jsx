@@ -72,7 +72,7 @@ export default function Page() {
 
 				<p>
 					<span>Email me at</span>
-					<a aria-label="hi@daviddong.me" href="mailto:hi@daviddong.me" className="text-zinc-500 mx-1 decoration-zinc-300 underline-offset-2  hover:decoration-zinc-400">hi@daviddong.me</a>
+					<a aria-label="hidaviddong@gmail.com" href="mailto:hidaviddong@gmail.com" className="text-zinc-500 mx-1 decoration-zinc-300 underline-offset-2  hover:decoration-zinc-400">hidaviddong@gmail.com</a>
 					<span>.</span>
 				</p>
 			</section>

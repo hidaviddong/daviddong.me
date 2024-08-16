@@ -43,7 +43,7 @@ export default function Page() {
 				</a>
 				<a
 					data-umami-event="Resume Button"
-					href="/cv.pdf"
+					href="/resume.pdf"
 					className="text-zinc-500 decoration-zinc-300 underline-offset-2 hover:decoration-zinc-400"
 				>
 					Resume

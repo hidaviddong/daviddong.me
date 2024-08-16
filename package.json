@@ -9,7 +9,8 @@
     "preview": "vite preview",
     "prepare": "husky",
     "webp": "bun run ./scripts/webp.js",
-    "og": "node ./scripts/og.js && bun run webp"
+    "og": "node ./scripts/og.js && bun run webp",
+    "resume": "rimraf ./public/resume.pdf && typst compile ./resume/main.typ ./public/resume.pdf"
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.1",
@@ -22,6 +23,7 @@
     "husky": "^9.0.11",
     "lint-staged": "^15.2.7",
     "postcss": "^8.4.38",
+    "rimraf": "^6.0.1",
     "shiki": "^1.9.1",
     "tailwindcss": "^3.4.4",
     "vite": "^5.2.13"

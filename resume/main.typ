@@ -43,26 +43,23 @@
 == Skills
 #chiline()
 
-- Proficient in React, Vue.js, and TypeScript tech stack.
-- Familiar with configuring and optimizing bundling tools like Webpack and Vite.
-- Skilled in SSR/CSR rendering mode and backend development with Node.js & MySQL. 
-- Experienced in Docker container deployment and image optimization for JavaScript projects. 
-- Familiar with Jenkins, GitHub Actions, and Cloudflare to deploy projects.
-- Proficient with team collaboration tools like Notion, Slack, GitHub. 
-- Experienced with design tools like Figma and Blender.
+- Experienced in full-stack development with React, Vue.js, TypeScript, Node.js, MySQL.
+- Experienced in SSR/CSR rendering techniques and build tools like Webpack and Vite.
+- Knowledge of basic DevOps in Docker containerization, Jenkins pipelines, GitHub Actions, Cloudflare.
+- Skilled in team collaboration tools like Notion, Slack, and GitHub for project management and version control.
+- Skilled in design tools like Figma for UI/UX prototyping and Blender for 3D modeling.
 
 == Work Experience
 #chiline()
 
 *PKU-Changsha Institute for Computing and Digital Economy* #h(1fr) 2023/07 -- 2024/07 \
- Frontend Developer #h(1fr) Changsha, China \
+ Web Developer #h(1fr) Changsha, China \
 
-- Core developer two projects: a large language model chatbot and an EEG web analysis platform.
-- Contributing the data visualization dashboard, involved in dynamic effects for 2D maps and some 3D modeling tasks.
-- Designed CI/CD multi-environment deployment pipelines for our most frontend projects.
+- Core developer for a large language model chatbot and several data visualization projects.
+- Designed CI/CD multi-environment deployment pipelines for our most JavaScript projects.
 
 *Tencent Music Entertainment* #h(1fr) 2022/05 -- 2022/10 \
-Frontend Developer Summer Intern #h(1fr) Shenzhen, China \
+Web Developer Summer Intern #h(1fr) Shenzhen, China \
 
 - Responsible for several high-traffic pages, including the live room widget and leaderboard in QQ Music and WeSing.
 - Participated in developing event tracking module and gateway modules for npm libraries, mastered the npm package release process.
@@ -70,25 +67,24 @@ Frontend Developer Summer Intern #h(1fr) Shenzhen, China \
 == Projects
 #chiline()
 *Large Language Model Chatbot* #h(1fr) #link("https://daviddong.me/project/chatbot")[*#fa[#hand.point.right]  Demo*]\
-  - Responsible for implementing core functions such as user system, image/text chatting, literature search, and plugin systems.
+
+  - Responsible for implementing key features such as user system, image/text chatting, literature search, and plugin systems.
   - Utilized SSE for streaming text output. Managed server state with React Query and implemented optimistic updates to enhanced user experience.
 
-*EEG Web Analysis Platform* #h(1fr) #link("https://daviddong.me/project/chatbot")[*#fa[#hand.point.right]  Demo*]\
-  - Responsible for implementing core functions such as user system, image/text chatting, literature search, and plugin systems.
-  - Implemented data caching across multiple time intervals to eliminate loading status when adjusting the timeline.
-  - Utilized SSE for streaming text output. Managed server state with React Query and implemented optimistic updates to enhanced user experience.
+*Data Visualization Projects* #h(1fr) #link("https://daviddong.me/project/data-visualization")[*#fa[#hand.point.right]  Demo*]\
 
-*Data Visualization Dashboard* #h(1fr) #link("https://daviddong.me/project/data-visualization")[*#fa[#hand.point.right]  Demo*]\
   - Developed interactive features including charts, world maps, and other dynamic visual effects using ECharts.
-  - Performance optimization techniques for loading 3D models, such as removing faces and baking textures.
-  - Using GSAP to achieve smooth transitions between different perspectives of the scene.
+  - Performance optimization techniques for loading 3D models, such as model compression, removing faces and baking textures.
+  - Using Three.js and GSAP to achieve smooth transitions between different perspectives of the scene.
+  - Implemented data caching across multiple time intervals to eliminate loading status when adjusting the timeline.
 
 *Comments* #h(1fr) #link("https://daviddong.me/project/comments")[*#fa[#hand.point.right]  Demo*]\
+
 - My open-source project, this is a comment system that users can deploy it themselves and host it on their website.
 - This project has garnered over 50 stars on #link("https://github.com/DongHY1/comments")[GitHub] and was featured in #link("https://www.ruanyifeng.com/blog/2023/12/weekly-issue-282.html")[Ruan Yifeng's Weekly]
 
 *Others*：
-  - Contributed PRs to #link("https://github.com/nodejs/node/pull/54569")[Node.js] and #link("https://github.com/reactjs/react.dev/pull/6509")[React.js], learning coding standards and teamwork.
+  - Contributed PRs to #link("https://github.com/nodejs/node/pull/54569")[Node.js] and #link("https://github.com/reactjs/react.dev/pull/6509")[React.js], gaining valuable experience in cross-team collaboration.
   - Published one SCI paper and three patents during school and company.
 
 // *Contributions* \
@@ -102,17 +98,20 @@ Frontend Developer Summer Intern #h(1fr) Shenzhen, China \
 
 *Hong Kong Metropolitan University* #h(1fr) 2024/09 -- 2025/09 \
 Master of Computing in Computer Science #h(1fr) Hong Kong \
+
 - The Katie Shu Sui Pui Charitable Trust — Research Training Fellowship in 2024
 
 *ShenZhen University* #h(1fr) 2020/09 -- 2023/06 \
 Master of Science in Materials Science and Engineering #h(1fr) Shenzhen, China \
+
 - First-Class Scholarship in 2022
 
 *Hunan University of Technology* #h(1fr) 2016/09 -- 2020/06 \
 Bachelor of Science in Construction Environment and Energy Application Engineering  #h(1fr) Zhuzhou, China \
 
-#align(center, text(fill: gray)[Last Updated on #today()])
-#pagebreak()
+// #align(center, text(fill: gray)[Last Updated on #today()])
+
+// #pagebreak()
 
 // chinese version
 

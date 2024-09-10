@@ -43,11 +43,10 @@
 == Skills
 #chiline()
 
-- Experienced in full-stack development with React, Vue.js, TypeScript, Node.js, MySQL.
-- Experienced in SSR/CSR rendering techniques and build tools like Webpack and Vite.
+- Experienced in frontend development with the ability to accurately implement designs, utilizing React.js, Vue.js, TypeScript, and build tools like Vite and Webpack.
+- Experienced in backend development, capable of independently designing and implementing RESTful APIs using Node.js, Python, MySQL, MongoDB.
 - Knowledge of basic DevOps in Docker containerization, Jenkins pipelines, GitHub Actions, Cloudflare.
 - Skilled in team collaboration tools like Notion, Slack, and GitHub for project management and version control.
-- Skilled in design tools like Figma for UI/UX prototyping and Blender for 3D modeling.
 
 == Work Experience
 #chiline()
@@ -105,6 +104,8 @@ Master of Computing in Computer Science #h(1fr) Hong Kong \
 Master of Science in Materials Science and Engineering #h(1fr) Shenzhen, China \
 
 - First-Class Scholarship in 2022
+- Research Paper: Co/N-doped Honeycomb Carbon Networks as Oxygen Electrocatalyst for Zinc-Air Batteries \
+  Published in: Carbon (IF: 10.5)
 
 *Hunan University of Technology* #h(1fr) 2016/09 -- 2020/06 \
 Bachelor of Science in Construction Environment and Energy Application Engineering  #h(1fr) Zhuzhou, China \

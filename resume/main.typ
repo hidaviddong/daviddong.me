@@ -46,8 +46,7 @@
 - Experienced in full-stack development with React, Vue.js, TypeScript, Node.js, MySQL, MongoDB.
 - Experienced in web scraping and automation using Puppeteer.
 - Knowledge of basic DevOps in Docker containerization, Jenkins pipelines, GitHub Actions, Cloudflare.
-- Skilled in team collaboration tools like Notion, Slack, and GitHub for project management and version control.
-- Skilled in design tools like Figma for UI/UX prototyping and Blender for 3D modeling.
+- Skilled in team collaboration tools like Notion, GitHub, and design tools like Figma, Blender.
 
 == Work Experience
 #chiline()
@@ -113,8 +112,6 @@ Master of Computing in Computer Science #h(1fr) Hong Kong \
 
 *ShenZhen University* #h(1fr) 2020/09 -- 2023/06 \
 Master of Science in Materials Science and Engineering #h(1fr) Shenzhen, China \
-
-- First-Class Scholarship in 2022
 
 *Hunan University of Technology* #h(1fr) 2016/09 -- 2020/06 \
 Bachelor of Science in Construction Environment and Energy Application Engineering  #h(1fr) Zhuzhou, China \

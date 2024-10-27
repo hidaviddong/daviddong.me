@@ -43,14 +43,20 @@
 == Skills
 #chiline()
 
-- Experienced in full-stack development with React, Vue.js, TypeScript, Node.js, MySQL.
+- Experienced in full-stack development with React, Vue.js, TypeScript, Node.js, MySQL, MongoDB.
 - Experienced in SSR/CSR rendering techniques and build tools like Webpack and Vite.
+- Experienced in web scraping and automation using Puppeteer.
 - Knowledge of basic DevOps in Docker containerization, Jenkins pipelines, GitHub Actions, Cloudflare.
 - Skilled in team collaboration tools like Notion, Slack, and GitHub for project management and version control.
 - Skilled in design tools like Figma for UI/UX prototyping and Blender for 3D modeling.
 
 == Work Experience
 #chiline()
+
+*Famous Raise Ltd* #h(1fr) 2024/09 -- 2024/10 \
+ Full Stack Developer Intern (Remote) #h(1fr) Hong Kong \
+
+- Building a generic blog crawler backend API with Express.js, MongoDB, Puppeteer.
 
 *PKU-Changsha Institute for Computing and Digital Economy* #h(1fr) 2023/07 -- 2024/07 \
  Web Developer #h(1fr) Changsha, China \
@@ -66,6 +72,13 @@ Web Developer Summer Intern #h(1fr) Shenzhen, China \
 
 == Projects
 #chiline()
+
+*Feeder* #h(1fr) #link("https://feeder.daviddong.me/")[*#fa[#hand.point.right]  Demo*]\
+
+ 	- Architected a scalable blog content aggregation API using Puppeteer and Node.js, enabling automated content extraction through configurable URL patterns and CSS selectors.
+	- Implemented AI-powered article summarization feature to generate concise content previews, enhancing user reading experience.
+	- Designed error handling with BullMQ job queue system for failed scraping attempts, ensuring reliable content delivery through automated retry mechanisms.
+
 *Large Language Model Chatbot* #h(1fr) #link("https://daviddong.me/project/chatbot")[*#fa[#hand.point.right]  Demo*]\
 
   - Responsible for implementing key features such as user system, image/text chatting, literature search, and plugin systems.

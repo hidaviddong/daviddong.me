@@ -44,7 +44,6 @@
 #chiline()
 
 - Experienced in full-stack development with React, Vue.js, TypeScript, Node.js, MySQL, MongoDB.
-- Experienced in SSR/CSR rendering techniques and build tools like Webpack and Vite.
 - Experienced in web scraping and automation using Puppeteer.
 - Knowledge of basic DevOps in Docker containerization, Jenkins pipelines, GitHub Actions, Cloudflare.
 - Skilled in team collaboration tools like Notion, Slack, and GitHub for project management and version control.
@@ -68,7 +67,6 @@
 Web Developer Summer Intern #h(1fr) Shenzhen, China \
 
 - Responsible for several high-traffic pages, including the live room widget and leaderboard in QQ Music and WeSing.
-- Participated in developing event tracking module and gateway modules for npm libraries, mastered the npm package release process.
 
 == Projects
 #chiline()
@@ -89,7 +87,6 @@ Web Developer Summer Intern #h(1fr) Shenzhen, China \
   - Developed interactive features including charts, world maps, and other dynamic visual effects using ECharts.
   - Performance optimization techniques for loading 3D models, such as model compression, removing faces and baking textures.
   - Using Three.js and GSAP to achieve smooth transitions between different perspectives of the scene.
-  - Implemented data caching across multiple time intervals to eliminate loading status when adjusting the timeline.
 
 *Comments* #h(1fr) #link("https://daviddong.me/project/comments")[*#fa[#hand.point.right]  Demo*]\
 
@@ -97,7 +94,7 @@ Web Developer Summer Intern #h(1fr) Shenzhen, China \
 - This project has garnered over 50 stars on #link("https://github.com/DongHY1/comments")[GitHub] and was featured in #link("https://www.ruanyifeng.com/blog/2023/12/weekly-issue-282.html")[Ruan Yifeng's Weekly]
 
 *Others*：
-  - Contributed PRs to #link("https://github.com/nodejs/node/pull/54569")[Node.js] and #link("https://github.com/reactjs/react.dev/pull/6509")[React.js], gaining valuable experience in cross-team collaboration.
+  - Contributed PRs to #link("https://github.com/nodejs/node/pull/54569")[Node.js] and #link("https://github.com/reactjs/react.dev/pull/6509")[React.js].
   - Published one SCI paper and three patents during school and company.
 
 // *Contributions* \

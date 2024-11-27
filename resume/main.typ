@@ -134,7 +134,7 @@ Bachelor of Science in Construction Environment and Energy Application Engineeri
 // }
 
 // = 董皓宇
-// +852 46720879 |  #link("https://wa.link/bbs3i9")[WhatsApp] | #link("mailto:hidaviddong@gmail.com")  | #link("https://github.com/hidaviddong")[GitHub] | #link("https://www.linkedin.com/in/hidaviddong")[LinkedIn] 
+// +852 46720879 / +86 19926690273 |  #link("https://wa.link/bbs3i9")[WhatsApp] | #link("mailto:hidaviddong@gmail.com")  | #link("https://github.com/hidaviddong")[GitHub] | #link("https://www.linkedin.com/in/hidaviddong")[LinkedIn] 
 // | #link("https://daviddong.me")[Website]
 
 // == 技能

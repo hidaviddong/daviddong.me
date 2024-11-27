@@ -1,5 +1,5 @@
-import { codeToHtml } from 'shiki'
-import { OpenSourceProjects } from "@/config"
+import { codeToHtml } from "shiki";
+import { SideProjects } from "@/config";
 export async function data(pageContext) {
   const code = `export const useImageMeta = (src) => {
         const [dimensions, setDimensions] = useState({
@@ -31,14 +31,16 @@ export async function data(pageContext) {
           fetchImageMeta();
         }, [src]);
         return dimensions;
-      };`
+      };`;
   const generatedHtml = await codeToHtml(code, {
-    lang: 'javascript',
-    theme: 'vitesse-light'
+    lang: "javascript",
+    theme: "vitesse-light",
   });
-  const project = OpenSourceProjects.find((project) => project.href === pageContext.urlParsed.pathname)
+  const project = SideProjects.find(
+    (project) => project.href === pageContext.urlParsed.pathname
+  );
   return {
     generatedHtml,
-    project
-  }
+    project,
+  };
 }

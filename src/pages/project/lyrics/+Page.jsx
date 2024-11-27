@@ -13,16 +13,30 @@ export default function Page() {
       <div className="flex flex-col space-y-12 mt-4">
         <div className="flex flex-col justify-center items-center">
           <Image
-            src="/images/raytracing.webp"
+            src="/images/lyrics-landscape.webp"
             alt="model"
             className="bg-gray-50 border rounded-md my-0"
           />
           <a
             aria-label="David Dong's GitHub project Mini-react"
             className="no-underline my-0 mt-4 text-sm font-medium hover:underline hover:cursor-pointer"
-            href="https://github.com/hidaviddong/raytracing-js"
+            href="https://songs.daviddong.me"
           >
-            Raytracing Website
+            Lyrics landscape mode
+          </a>
+        </div>
+        <div className="flex flex-col justify-center items-center">
+          <Image
+            src="/images/lyrics-portrait.webp"
+            alt="model"
+            className="bg-gray-50 border rounded-md my-0"
+          />
+          <a
+            aria-label="David Dong's GitHub project Mini-react"
+            className="no-underline my-0 mt-4 text-sm font-medium hover:underline hover:cursor-pointer"
+            href="https://songs.daviddong.me"
+          >
+            Lyrics portrait mode
           </a>
         </div>
       </div>

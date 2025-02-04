@@ -10,8 +10,7 @@
     "prepare": "husky",
     "webp": "npm run ./scripts/webp.js",
     "og": "node ./scripts/og.js && npm run webp",
-    "resume": "rimraf ./public/resume.pdf && typst compile ./resume/main.typ ./public/resume.pdf",
-    "resume:cn": "rimraf ./public/resume-cn.pdf && typst compile ./resume/main-cn.typ ./public/resume-cn.pdf"
+    "resume": "rimraf ./public/resume.pdf && typst compile ./resume/main.typ ./public/resume.pdf"
   },
   "devDependencies": {
     "@biomejs/biome": "1.8.1",
